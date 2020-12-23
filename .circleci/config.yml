@@ -1,0 +1,66 @@
+version: 2
+
+aliases:
+  - &restore-cache
+    restore_cache:
+      key: dependency-cache-{{ checksum "package.json" }}
+  - &install-deps
+    run:
+      name: Install dependencies
+      command: yarn install --immutable
+  - &build-packages
+    run:
+      name: Build
+      command: yarn build
+
+jobs:
+  build:
+    working_directory: ~/nestjs-validation
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Build
+          command: yarn build
+
+  lint:
+    working_directory: ~/nestjs-logger
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Run Eslint
+          command: yarn lint && yarn lint:test
+      - run:
+          name: Run Prettier
+          command: yarn format --check
+
+  tests:
+    working_directory: ~/nestjs-logger
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Run Tests
+          command: yarn test
+
+workflows:
+  version: 2
+  build-lint-test:
+    jobs:
+      - build
+      - lint:
+          requires:
+            - build
+      - tests:
+          requires:
+            - build
