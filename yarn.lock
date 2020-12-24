@@ -831,10 +831,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mocha@npm:8.0.4":
-  version: 8.0.4
-  resolution: "@types/mocha@npm:8.0.4"
-  checksum: 6eb10fb17ebe5728910e327e30b0ae1a355051133c613852f48240204fea185e48c20a1c9b79f247d100c93a4d69cbffadfdc13d412cc9ea0d0deac7a7e571cc
+"@types/mocha@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@types/mocha@npm:8.2.0"
+  checksum: 87a6cc62fa8bb4c0d3c9447c7aa316b600435fa969822e5a786abc9df78e4143f71906480684dbf9ae7b8b8849dfda4783828c47e5415d370371db84225a05ff
   languageName: node
   linkType: hard
 
@@ -4618,7 +4618,7 @@ fsevents@~2.1.2:
     "@nestjs/testing": 7.5.4
     "@release-it/conventional-changelog": 2.0.0
     "@types/chai": 4.2.14
-    "@types/mocha": 8.0.4
+    "@types/mocha": 8.2.0
     "@types/node": 14.14.8
     "@types/sinon": 9.0.8
     "@types/sinon-chai": 3.2.5
