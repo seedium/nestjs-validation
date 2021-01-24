@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.2.0"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
-            ["husky", "npm:4.3.0"],
+            ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.1"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
@@ -3331,11 +3331,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["find-versions", [
-        ["npm:3.2.0", {
-          "packageLocation": "./.yarn/cache/find-versions-npm-3.2.0-2a87d094e9-2ddc16b426.zip/node_modules/find-versions/",
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/find-versions-npm-4.0.0-e4bd62bace-0517412834.zip/node_modules/find-versions/",
           "packageDependencies": [
-            ["find-versions", "npm:3.2.0"],
-            ["semver-regex", "npm:2.0.0"]
+            ["find-versions", "npm:4.0.0"],
+            ["semver-regex", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -4015,17 +4015,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.3.0", {
-          "packageLocation": "./.yarn/cache/husky-npm-4.3.0-b6c2d49d0e-c212d9732d.zip/node_modules/husky/",
+        ["npm:4.3.8", {
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.8-f7cd00e56d-1ac4fb51ff.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.3.0"],
+            ["husky", "npm:4.3.8"],
             ["chalk", "npm:4.1.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.6.0"],
             ["cosmiconfig", "npm:7.0.0"],
-            ["find-versions", "npm:3.2.0"],
+            ["find-versions", "npm:4.0.0"],
             ["opencollective-postinstall", "npm:2.0.3"],
-            ["pkg-dir", "npm:4.2.0"],
+            ["pkg-dir", "npm:5.0.0"],
             ["please-upgrade-node", "npm:3.2.0"],
             ["slash", "npm:3.0.0"],
             ["which-pm-runs", "npm:1.0.0"]
@@ -5419,7 +5419,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.2.0"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
-            ["husky", "npm:4.3.0"],
+            ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.1"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
@@ -6107,6 +6107,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["find-up", "npm:4.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/pkg-dir-npm-5.0.0-3ba6768b42-86f6ecee17.zip/node_modules/pkg-dir/",
+          "packageDependencies": [
+            ["pkg-dir", "npm:5.0.0"],
+            ["find-up", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["please-upgrade-node", [
@@ -6792,10 +6800,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["semver-regex", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/semver-regex-npm-2.0.0-218c804009-9b96cc8bd5.zip/node_modules/semver-regex/",
+        ["npm:3.1.2", {
+          "packageLocation": "./.yarn/cache/semver-regex-npm-3.1.2-66d0f8130f-6a83740f3f.zip/node_modules/semver-regex/",
           "packageDependencies": [
-            ["semver-regex", "npm:2.0.0"]
+            ["semver-regex", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
