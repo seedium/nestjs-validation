@@ -4,13 +4,13 @@ import { ModulesContainer } from '@nestjs/core';
 import { Module } from '@nestjs/core/injector/module';
 import { OpenAPIObject } from '@nestjs/swagger/dist/interfaces';
 import { SwaggerScanner } from '@nestjs/swagger/dist/swagger-scanner';
-import { flatten } from 'lodash';
 import {
   IScanBodySchema,
   IScanResponsesSchemas,
   IScanQueryParamHeaderSchemas,
   SwaggerDataType,
 } from '../interfaces';
+import { flatten } from '../utils';
 
 @Injectable()
 export class SwaggerExplorerServices {

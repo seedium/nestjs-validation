@@ -47,7 +47,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
             ["@types/chai", "npm:4.2.14"],
-            ["@types/lodash", "npm:4.14.167"],
             ["@types/mocha", "npm:8.2.0"],
             ["@types/node", "npm:14.14.8"],
             ["@types/sinon", "npm:9.0.8"],
@@ -65,7 +64,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.1"],
-            ["lodash", "npm:4.17.20"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.1.2"],
@@ -1176,15 +1174,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/keyv", "npm:3.1.1"],
             ["@types/node", "npm:14.14.14"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@types/lodash", [
-        ["npm:4.14.167", {
-          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.167-275fff817a-40778f83a8.zip/node_modules/@types/lodash/",
-          "packageDependencies": [
-            ["@types/lodash", "npm:4.14.167"]
           ],
           "linkType": "HARD",
         }]
@@ -6103,7 +6092,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
             ["@types/chai", "npm:4.2.14"],
-            ["@types/lodash", "npm:4.14.167"],
             ["@types/mocha", "npm:8.2.0"],
             ["@types/node", "npm:14.14.8"],
             ["@types/sinon", "npm:9.0.8"],
@@ -6121,7 +6109,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.1"],
-            ["lodash", "npm:4.17.20"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.1.2"],
