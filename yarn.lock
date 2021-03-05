@@ -864,13 +864,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.167":
-  version: 4.14.167
-  resolution: "@types/lodash@npm:4.14.167"
-  checksum: 40778f83a86392625b3d52c15f59171a0f6a35436128b8fb1e37f89162f7950dc98570f27bc99ce1e2e04084e64da41cb45146d091d5181e12c6733bcf16fac6
-  languageName: node
-  linkType: hard
-
 "@types/minimist@npm:^1.2.0":
   version: 1.2.1
   resolution: "@types/minimist@npm:1.2.1"
@@ -5176,7 +5169,6 @@ fsevents@~2.1.2:
     "@nestjs/testing": 7.5.4
     "@release-it/conventional-changelog": ^2.0.1
     "@types/chai": 4.2.14
-    "@types/lodash": ^4.14.167
     "@types/mocha": 8.2.0
     "@types/node": 14.14.8
     "@types/sinon": 9.0.8
@@ -5194,7 +5186,6 @@ fsevents@~2.1.2:
     husky: 4.3.0
     light-my-request: ^4.4.1
     lint-staged: 10.5.1
-    lodash: ^4.17.20
     mocha: 8.2.1
     nyc: 15.1.0
     prettier: 2.1.2
