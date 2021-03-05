@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.5"],
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.7.8"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
             ["@types/chai", "npm:4.2.14"],
             ["@types/lodash", "npm:4.14.167"],
             ["@types/mocha", "npm:8.2.0"],
@@ -58,6 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.0.3"],
             ["ajv-formats", "npm:1.5.1"],
             ["chai", "npm:4.2.0"],
+            ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
             ["fluent-schema", "npm:1.1.0"],
@@ -72,6 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
+            ["semver", "npm:7.3.4"],
             ["sinon", "npm:9.2.3"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
@@ -1019,21 +1021,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@release-it/conventional-changelog", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-2.0.0-deca0960e1-430c39a306.zip/node_modules/@release-it/conventional-changelog/",
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "npm:2.0.0"]
+            ["@release-it/conventional-changelog", "npm:2.0.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.0", {
-          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-9cdd434c30/0/cache/@release-it-conventional-changelog-npm-2.0.0-deca0960e1-430c39a306.zip/node_modules/@release-it/conventional-changelog/",
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-06c3283517/0/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
             ["@types/release-it", null],
             ["concat-stream", "npm:2.0.0"],
             ["conventional-changelog", "npm:3.1.24"],
-            ["conventional-recommended-bump", "npm:6.0.11"],
+            ["conventional-recommended-bump", "npm:6.1.0"],
             ["prepend-file", "npm:2.0.0"],
             ["release-it", "npm:14.2.1"]
           ],
@@ -2751,15 +2753,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["conventional-recommended-bump", [
-        ["npm:6.0.11", {
-          "packageLocation": "./.yarn/cache/conventional-recommended-bump-npm-6.0.11-922499259d-e81e83c60f.zip/node_modules/conventional-recommended-bump/",
+        ["npm:6.1.0", {
+          "packageLocation": "./.yarn/cache/conventional-recommended-bump-npm-6.1.0-18a6db0ce9-ff9483c01d.zip/node_modules/conventional-recommended-bump/",
           "packageDependencies": [
-            ["conventional-recommended-bump", "npm:6.0.11"],
+            ["conventional-recommended-bump", "npm:6.1.0"],
             ["concat-stream", "npm:2.0.0"],
             ["conventional-changelog-preset-loader", "npm:2.3.4"],
             ["conventional-commits-filter", "npm:2.0.7"],
             ["conventional-commits-parser", "npm:3.2.0"],
-            ["git-raw-commits", "npm:2.0.0"],
+            ["git-raw-commits", "npm:2.0.10"],
             ["git-semver-tags", "npm:4.1.1"],
             ["meow", "npm:8.0.0"],
             ["q", "npm:1.5.1"]
@@ -4154,6 +4156,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["meow", "npm:4.0.1"],
             ["split2", "npm:2.2.0"],
             ["through2", "npm:2.0.5"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.10", {
+          "packageLocation": "./.yarn/cache/git-raw-commits-npm-2.0.10-66e3a843dd-8c8769db98.zip/node_modules/git-raw-commits/",
+          "packageDependencies": [
+            ["git-raw-commits", "npm:2.0.10"],
+            ["dargs", "npm:7.0.0"],
+            ["lodash", "npm:4.17.20"],
+            ["meow", "npm:8.0.0"],
+            ["split2", "npm:3.2.2"],
+            ["through2", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }],
@@ -6087,7 +6101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.5"],
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.7.8"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
             ["@types/chai", "npm:4.2.14"],
             ["@types/lodash", "npm:4.14.167"],
             ["@types/mocha", "npm:8.2.0"],
@@ -6100,6 +6114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.0.3"],
             ["ajv-formats", "npm:1.5.1"],
             ["chai", "npm:4.2.0"],
+            ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
             ["fluent-schema", "npm:1.1.0"],
@@ -6114,6 +6129,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
+            ["semver", "npm:7.3.4"],
             ["sinon", "npm:9.2.3"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
@@ -7883,6 +7899,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["split2", "npm:2.2.0"],
             ["through2", "npm:2.0.5"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.2.2", {
+          "packageLocation": "./.yarn/cache/split2-npm-3.2.2-4ccd21b4f7-04bf20af25.zip/node_modules/split2/",
+          "packageDependencies": [
+            ["split2", "npm:3.2.2"],
+            ["readable-stream", "npm:3.6.0"]
           ],
           "linkType": "HARD",
         }]
