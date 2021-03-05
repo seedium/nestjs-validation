@@ -1,5 +1,5 @@
 *
-!dist
+!dist/**/*
 !package.json
-!*.d.ts
-!*.js
+!index.js
+!index.d.ts
