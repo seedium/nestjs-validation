@@ -36,7 +36,7 @@
     "@nestjs/platform-express": "^7.6.5",
     "@nestjs/swagger": "^4.7.8",
     "@nestjs/testing": "7.5.4",
-    "@release-it/conventional-changelog": "2.0.0",
+    "@release-it/conventional-changelog": "2.0.1",
     "@types/chai": "4.2.14",
     "@types/lodash": "^4.14.167",
     "@types/mocha": "8.2.0",
