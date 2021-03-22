@@ -20,10 +20,12 @@
   "scripts": {
     "clean": "rimraf -rf 'dist' 'tsconfig.tsbuildinfo'",
     "build": "yarn clean && tsc -p tsconfig.json",
+    "watch": "yarn clean && tsc -w",
     "lint": "eslint lib/**/*.ts",
     "lint:test": "eslint -c .eslintrc.spec.yaml test/**/*.spec.ts",
     "format": "prettier '{lib,test}/**/*.ts' '{lib,test}/*.ts'",
     "test": "yarn clean && nyc --nycrc-path .nycrc.yaml mocha --reporter spec --exit 'test/**/*.spec.ts' 'test/*.spec.ts'",
+    "test:integration": "yarn clean && nyc mocha 'integration/**/*.spec.ts' --reporter spec --exit",
     "prerelease": "yarn clean && yarn build",
     "release": "release-it"
   },
@@ -49,7 +51,6 @@
     "conventional-changelog-angular": "^5.0.12",
     "eslint": "7.13.0",
     "eslint-config-prettier": "6.15.0",
-    "fluent-schema": "^1.1.0",
     "husky": "4.3.0",
     "light-my-request": "^4.4.1",
     "lint-staged": "10.5.1",
@@ -79,6 +80,7 @@
   },
   "dependencies": {
     "ajv": "^7.0.3",
-    "ajv-formats": "^1.5.1"
+    "fluent-json-schema": "^2.0.4",
+    "lodash.pickby": "^4.6.0"
   }
 }

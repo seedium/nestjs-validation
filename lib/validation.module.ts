@@ -1,23 +1,31 @@
-import { DynamicModule } from '@nestjs/common';
-import { ValidationCoreModule } from './validation.core.module';
-import { IValidatorErrorHandler } from './interfaces';
-import { IValidationModuleOptions } from './interfaces/validation-module-options.interface';
-import { ValidatorErrorHandler } from './validator-error-handler';
+import { DynamicModule, Module } from '@nestjs/common';
+import { ValidationCoreModule } from './validation-core.module';
+import {
+  ValidationModuleAsyncOptions,
+  ValidationModuleOptions,
+} from './interfaces';
+import { createValidationProviders } from './validation.provider';
 
+@Module({})
 export class ValidationModule {
-  static forRoot(
-    options: IValidationModuleOptions = {
-      strict: false,
-      removeAdditional: true,
-      useDefaults: true,
-      coerceTypes: true,
-      allErrors: true,
-    },
-    validatorErrorHandler: IValidatorErrorHandler = new ValidatorErrorHandler(),
-  ): DynamicModule {
+  static forRoot(options?: ValidationModuleOptions): DynamicModule {
     return {
       module: ValidationModule,
-      imports: [ValidationCoreModule.forRoot(options, validatorErrorHandler)],
+      imports: [ValidationCoreModule.forRoot(options)],
+    };
+  }
+  static forRootAsync(options: ValidationModuleAsyncOptions): DynamicModule {
+    return {
+      module: ValidationModule,
+      imports: [ValidationCoreModule.forRootAsync(options)],
+    };
+  }
+  static forFeature(): DynamicModule {
+    const providers = createValidationProviders();
+    return {
+      module: ValidationModule,
+      providers: providers,
+      exports: providers,
     };
   }
 }
