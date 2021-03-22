@@ -1147,15 +1147,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv-formats@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "ajv-formats@npm:1.5.1"
-  dependencies:
-    ajv: ^7.0.0
-  checksum: 0c13847af10b5ad2657d77e5e471ff792d94405e119c2b8345eda797c9a20d98510cdb0f4eac7db330240ca47a5fb4dba891463172ee2ab9426044e15fe1e2e4
-  languageName: node
-  linkType: hard
-
 "ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
@@ -1165,18 +1156,6 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^7.0.0":
-  version: 7.1.1
-  resolution: "ajv@npm:7.1.1"
-  dependencies:
-    fast-deep-equal: ^3.1.1
-    json-schema-traverse: ^1.0.0
-    require-from-string: ^2.0.2
-    uri-js: ^4.2.2
-  checksum: fe4e138529363bf1c8c429e1f3e88480918b538fe4a44660b989cea863714715af75e874aad129ccd5cbcf6647fa457e20b735bb3279a3bca08f11193bae5d19
   languageName: node
   linkType: hard
 
@@ -3143,12 +3122,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fluent-schema@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "fluent-schema@npm:1.1.0"
+"fluent-json-schema@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "fluent-json-schema@npm:2.0.4"
   dependencies:
     deepmerge: ^4.2.2
-  checksum: f0ebdd862fac13ed5b2d2571831e8a503b3d4c95f4ebc311f5fa878316d22ebaa092504f03c923747e7394ba97d4178fca13097c8958f94049591fbe71ca70a2
+  checksum: 0ee9cbce3985f2395b889ab789842ef0874a9a82d083fcdf7e769ed7a695d545c54de49d8c6e85c66d3e6e0f42e9606d7d013000baa784b9fda7be82603a65e0
   languageName: node
   linkType: hard
 
@@ -4668,6 +4647,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"lodash.pickby@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.pickby@npm:4.6.0"
+  checksum: 4be8dc90315a03aa002d9c3899a5803f8ba22739442a187de2258a332666d51a0800db8b87875543ebc05bdc6919d12a0d8b6d8ab2e0fcdd20fe1cf908f15c31
+  languageName: node
+  linkType: hard
+
 "lodash.template@npm:^4.0.2":
   version: 4.5.0
   resolution: "lodash.template@npm:4.5.0"
@@ -5184,15 +5170,15 @@ fsevents@~2.1.2:
     "@typescript-eslint/eslint-plugin": 4.8.1
     "@typescript-eslint/parser": 4.8.1
     ajv: ^7.0.3
-    ajv-formats: ^1.5.1
     chai: 4.2.0
     conventional-changelog-angular: ^5.0.12
     eslint: 7.13.0
     eslint-config-prettier: 6.15.0
-    fluent-schema: ^1.1.0
+    fluent-json-schema: ^2.0.4
     husky: 4.3.0
     light-my-request: ^4.4.1
     lint-staged: 10.5.1
+    lodash.pickby: ^4.6.0
     mocha: 8.2.1
     nyc: 15.1.0
     prettier: 2.1.2

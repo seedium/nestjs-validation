@@ -27,7 +27,7 @@ jobs:
           command: yarn build
 
   lint:
-    working_directory: ~/nestjs-logger
+    working_directory: ~/nestjs-validation
     docker:
       - image: circleci/node:14
     steps:
@@ -42,7 +42,7 @@ jobs:
           command: yarn format --check
 
   tests:
-    working_directory: ~/nestjs-logger
+    working_directory: ~/nestjs-validation
     docker:
       - image: circleci/node:14
     steps:
@@ -52,6 +52,17 @@ jobs:
       - run:
           name: Run Tests
           command: yarn test
+  integration-tests:
+    working_directory: ~/nestjs-validation
+    docker:
+        - image: circleci/node:14
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Run Integration Tests
+          command: yarn test:integration
 
 workflows:
   version: 2
@@ -62,5 +73,8 @@ workflows:
           requires:
             - build
       - tests:
+          requires:
+            - build
+      - integration-tests:
           requires:
             - build

@@ -3,71 +3,89 @@ import {
   NestInterceptor,
   ExecutionContext,
   CallHandler,
-  Inject,
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { VALIDATOR, VALIDATOR_ERROR_HANDLER } from '../constants';
-import { ISchemaIdContextData, IValidator } from '../interfaces';
-import { NestJsContextProvider } from '../nestjs-context-provider';
-import { ValidatorErrorHandler } from '../validator-error-handler';
+import { ValidationContextService } from '../services';
+import { ValidationException } from '../exceptions';
+import { SerializerTypeValidator } from '../interfaces';
+import { AsyncValidateFunction } from 'ajv';
 
 @Injectable()
 export class JsonSchemaSerializerInterceptor implements NestInterceptor {
-  private readonly _contextProvider = new NestJsContextProvider();
-
-  constructor(
-    @Inject(VALIDATOR) private _validator: IValidator,
-    @Inject(VALIDATOR_ERROR_HANDLER)
-    private _errorHandler: ValidatorErrorHandler,
-  ) {}
-
+  constructor(private readonly _validationContext: ValidationContextService) {}
   public async intercept(
     context: ExecutionContext,
     next: CallHandler,
   ): Promise<Observable<any>> {
-    const schemas = this.getPathSchemas(context);
-
-    await Promise.all(
-      schemas.map(async (schema) => {
-        const result = await this._validator.validateBySwaggerSchemaId(
-          schema.id,
-          schema.data,
-        );
-
-        if (!result.success) {
-          this._errorHandler.handle(result.errors);
-        }
-      }),
-    );
-
-    return next.handle().pipe(
-      map(async (data) => {
-        const statusCode = this._contextProvider.getStatusCode(context);
-
-        const result = await this._validator.validateBySwaggerSchemaId(
-          this._contextProvider.getSchemaIdCompiler(context)(statusCode),
-          data,
-        );
-
-        if (!result.success) {
-          this._errorHandler.handle(result.errors);
-        }
-
-        return data;
-      }),
-    );
+    await this.onRequest(context);
+    return next.handle().pipe(map((data) => this.onResponse(data, context)));
   }
-
-  private getPathSchemas(context: ExecutionContext): ISchemaIdContextData[] {
-    const getSchemaId = this._contextProvider.getSchemaIdCompiler(context);
-    const extractDataRequest = this._contextProvider.getRequestExtractor(
+  private async onRequest(context: ExecutionContext): Promise<void> {
+    const req = context.switchToHttp().getRequest();
+    const serializerTypeValidators: SerializerTypeValidator[] = [
+      {
+        type: 'params',
+        validator: this._validationContext.getValidatorByType(
+          'parameters',
+          context,
+        ),
+      },
+      {
+        type: 'query',
+        validator: this._validationContext.getValidatorByType('query', context),
+      },
+      {
+        type: 'headers',
+        validator: this._validationContext.getValidatorByType(
+          'headers',
+          context,
+        ),
+      },
+      {
+        type: 'body',
+        validator: this._validationContext.getValidatorByType('body', context),
+      },
+    ];
+    try {
+      await Promise.all(
+        serializerTypeValidators
+          .filter(this.isSerializerValidatorSet())
+          .map(({ type, validator }) => validator(req[type])),
+      );
+    } catch (err) {
+      throw new ValidationException(err.errors);
+    }
+  }
+  private async onResponse<T = unknown>(
+    data: T,
+    context: ExecutionContext,
+  ): Promise<T> {
+    const statusCode = this.getStatusCode(context);
+    const validator = this._validationContext.getResponseValidatorByStatusCode(
+      statusCode,
       context,
     );
-
-    return this._contextProvider.swaggerDataTypes.map((dataType) => ({
-      data: extractDataRequest(dataType),
-      id: getSchemaId(dataType),
-    }));
+    if (!validator) {
+      return data;
+    }
+    try {
+      await validator(data);
+    } catch (err) {
+      throw new ValidationException(err.errors);
+    }
+    return data;
+  }
+  private getStatusCode(context: ExecutionContext): number {
+    const res = context.switchToHttp().getResponse();
+    return res.statusCode;
+  }
+  private isSerializerValidatorSet(): (
+    _serializerValidator: SerializerTypeValidator,
+  ) => _serializerValidator is SerializerTypeValidator<AsyncValidateFunction> {
+    return (
+      serializerValidator: SerializerTypeValidator,
+    ): serializerValidator is SerializerTypeValidator<AsyncValidateFunction> =>
+      !!serializerValidator.validator;
   }
 }

@@ -5,11 +5,15 @@ import { Module } from '@nestjs/core/injector/module';
 import { OpenAPIObject } from '@nestjs/swagger/dist/interfaces';
 import { SwaggerScanner } from '@nestjs/swagger/dist/swagger-scanner';
 import {
-  IScanBodySchema,
-  IScanResponsesSchemas,
-  IScanQueryParamHeaderSchemas,
-  SwaggerDataType,
-} from '../interfaces';
+  ParameterObject,
+  ResponsesObject,
+  ReferenceObject,
+  ResponseObject,
+  ParameterLocation,
+  RequestBodyObject,
+} from '@nestjs/swagger/dist/interfaces/open-api-spec.interface';
+import S, { JSONSchema } from 'fluent-json-schema';
+import { PathsSchemas, DefaultObjectSchema } from '../interfaces';
 import { flatten } from '../utils';
 
 @Injectable()
@@ -18,80 +22,29 @@ export class SwaggerExplorerServices {
 
   constructor(private readonly _modulesContainer: ModulesContainer) {}
 
-  public explore(): any[] {
+  public explore(): PathsSchemas {
     const { paths } = this.scanApplication();
-
-    return Object.values(paths).reduce((schemas: unknown[], methods) => {
-      Object.values(methods).forEach((swaggerSchemas) => {
-        schemas.push(...this.scanBodySchema(swaggerSchemas));
-        schemas.push(...this.scanSchemas(swaggerSchemas, 'path'));
-        schemas.push(...this.scanSchemas(swaggerSchemas, 'query'));
-        schemas.push(...this.scanSchemas(swaggerSchemas, 'header'));
-        schemas.push(...this.scanResponsesSchemas(swaggerSchemas));
+    let schemas: PathsSchemas = {};
+    Object.values(paths).forEach((methods) => {
+      Object.values(methods).forEach((operationObject) => {
+        const operationId = operationObject.operationId;
+        schemas = {
+          ...schemas,
+          [operationId]: {
+            parameters: this.mergeParameters(
+              'path',
+              operationObject.parameters,
+            ),
+            query: this.mergeParameters('query', operationObject.parameters),
+            headers: this.mergeParameters('header', operationObject.parameters),
+            body: this.extractBodySchema(operationObject.requestBody),
+            responses: this.transformResponses(operationObject.responses),
+          },
+        };
       });
-
-      return schemas;
-    }, []);
-  }
-
-  protected scanBodySchema({
-    operationId,
-    requestBody,
-  }: IScanBodySchema): any[] {
-    if (!requestBody || !requestBody.content) {
-      return [];
-    }
-
-    return [
-      {
-        ...requestBody.content['application/json'].schema,
-        $id: `${operationId}_body`,
-      },
-    ];
-  }
-
-  protected scanResponsesSchemas({
-    operationId,
-    responses,
-  }: IScanResponsesSchemas): any[] {
-    const result: any[] = [];
-
-    Object.keys(responses).forEach((status) => {
-      if (responses[status].content) {
-        const schema = responses[status].content['application/json'].schema;
-
-        result.push({
-          ...schema,
-          $id: `${operationId}_${status}`,
-        });
-      }
     });
-
-    return result;
+    return schemas;
   }
-
-  protected scanSchemas(
-    { operationId, parameters }: IScanQueryParamHeaderSchemas,
-    type: SwaggerDataType,
-  ): any[] {
-    const schemaFilter = (filterSchema) => filterSchema.in === type;
-
-    const filterSchemas = parameters.filter(schemaFilter);
-
-    if (filterSchemas.length === 0) {
-      return [];
-    }
-
-    const schema = this.createSchemaFromSchemas(filterSchemas);
-
-    return [
-      {
-        ...schema,
-        $id: `${operationId}_${type}`,
-      },
-    ];
-  }
-
   protected scanApplication(): Omit<OpenAPIObject, 'openapi' | 'info'> {
     const modules: Module[] = this._scanner.getModules(
       this._modulesContainer,
@@ -109,24 +62,96 @@ export class SwaggerExplorerServices {
       flatten(denormalizedPaths),
     );
   }
-
-  protected createSchemaFromSchemas(
-    swaggerSchemas: Record<string, any>[],
-  ): any {
-    const schema: Record<string, any> = {
+  private mergeParameters(
+    type: ParameterLocation,
+    parameters?: (ParameterObject | ReferenceObject)[],
+  ): JSONSchema | null {
+    if (!parameters) {
+      return null;
+    }
+    const filteredParameters = parameters
+      .filter(this.filterNotReferenceObject())
+      .filter(this.filterParameterObjectByType(type));
+    if (!filteredParameters.length) {
+      return null;
+    }
+    const required: string[] = [];
+    const jsonSchema = this.createEmptyObjectSchema();
+    filteredParameters.forEach((parameterObject) => {
+      const propertyName = this.getPropertyName(type, parameterObject.name);
+      if (parameterObject.required) {
+        required.push(propertyName);
+      }
+      jsonSchema.properties[propertyName] = parameterObject.schema;
+    });
+    jsonSchema.required.push(...required);
+    return S.raw(jsonSchema);
+  }
+  private getPropertyName(type: ParameterLocation, name: string): string {
+    if (type === 'header') {
+      return name.toLowerCase();
+    }
+    return name;
+  }
+  private extractBodySchema(requestBody: RequestBodyObject): JSONSchema | null {
+    const schema = this.getSchemaFromJsonMediaType(requestBody);
+    return schema ?? null;
+  }
+  private transformResponses(
+    responses?: ResponsesObject,
+  ): Record<string, JSONSchema> {
+    if (!responses) {
+      return {};
+    }
+    return Object.entries(responses).reduce(
+      (responsesJsonSchemas, [statusCode, responseObject]) => {
+        const isNotReferenceObject = this.filterNotReferenceObject()(
+          responseObject,
+        );
+        if (!isNotReferenceObject) {
+          return responsesJsonSchemas;
+        }
+        const schema = this.getSchemaFromJsonMediaType(
+          responseObject as ResponseObject,
+        );
+        if (schema) {
+          responsesJsonSchemas[statusCode] = schema;
+        }
+        return responsesJsonSchemas;
+      },
+      {} as Record<string, JSONSchema>,
+    );
+  }
+  private filterParameterObjectByType(type: ParameterLocation) {
+    return (parameterObject: ParameterObject) => parameterObject.in === type;
+  }
+  private filterNotReferenceObject<T>(): (
+    _args: T | ReferenceObject,
+  ) => _args is T {
+    return (
+      parameterObjectOrRef: T | ReferenceObject,
+    ): parameterObjectOrRef is T => !('$ref' in parameterObjectOrRef);
+  }
+  private createEmptyObjectSchema(): DefaultObjectSchema {
+    return {
       type: 'object',
+      additionalProperties: false,
       required: [],
       properties: {},
     };
-
-    swaggerSchemas.forEach((swaggerSchema) => {
-      schema.properties[swaggerSchema.name] = swaggerSchema.schema;
-
-      if (swaggerSchema.required) {
-        schema.required.push(swaggerSchema.name);
-      }
-    });
-
-    return schema;
+  }
+  private getSchemaFromJsonMediaType(
+    responseOrRequestObject?: ResponseObject | RequestBodyObject,
+  ): JSONSchema | null {
+    if (
+      responseOrRequestObject &&
+      responseOrRequestObject.content &&
+      responseOrRequestObject.content['application/json'] &&
+      responseOrRequestObject.content['application/json'].schema
+    ) {
+      return S.raw(responseOrRequestObject.content['application/json'].schema);
+    } else {
+      return null;
+    }
   }
 }

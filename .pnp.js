@@ -55,15 +55,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
             ["ajv", "npm:7.0.3"],
-            ["ajv-formats", "npm:1.5.1"],
             ["chai", "npm:4.2.0"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
-            ["fluent-schema", "npm:1.1.0"],
+            ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.1"],
+            ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.1.2"],
@@ -1587,27 +1587,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
             ["uri-js", "npm:4.4.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:7.1.1", {
-          "packageLocation": "./.yarn/cache/ajv-npm-7.1.1-2207905505-fe4e138529.zip/node_modules/ajv/",
-          "packageDependencies": [
-            ["ajv", "npm:7.1.1"],
-            ["fast-deep-equal", "npm:3.1.3"],
-            ["json-schema-traverse", "npm:1.0.0"],
-            ["require-from-string", "npm:2.0.2"],
-            ["uri-js", "npm:4.4.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["ajv-formats", [
-        ["npm:1.5.1", {
-          "packageLocation": "./.yarn/cache/ajv-formats-npm-1.5.1-f058cf5c41-0c13847af1.zip/node_modules/ajv-formats/",
-          "packageDependencies": [
-            ["ajv-formats", "npm:1.5.1"],
-            ["ajv", "npm:7.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -3848,11 +3827,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["fluent-schema", [
-        ["npm:1.1.0", {
-          "packageLocation": "./.yarn/cache/fluent-schema-npm-1.1.0-be53db73ce-f0ebdd862f.zip/node_modules/fluent-schema/",
+      ["fluent-json-schema", [
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/fluent-json-schema-npm-2.0.4-aef1d0f70c-0ee9cbce39.zip/node_modules/fluent-json-schema/",
           "packageDependencies": [
-            ["fluent-schema", "npm:1.1.0"],
+            ["fluent-json-schema", "npm:2.0.4"],
             ["deepmerge", "npm:4.2.2"]
           ],
           "linkType": "HARD",
@@ -5554,6 +5533,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lodash.pickby", [
+        ["npm:4.6.0", {
+          "packageLocation": "./.yarn/cache/lodash.pickby-npm-4.6.0-84e9fee0d5-4be8dc9031.zip/node_modules/lodash.pickby/",
+          "packageDependencies": [
+            ["lodash.pickby", "npm:4.6.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lodash.template", [
         ["npm:4.5.0", {
           "packageLocation": "./.yarn/cache/lodash.template-npm-4.5.0-5272df3039-e27068e20b.zip/node_modules/lodash.template/",
@@ -6108,15 +6096,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
             ["ajv", "npm:7.0.3"],
-            ["ajv-formats", "npm:1.5.1"],
             ["chai", "npm:4.2.0"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
-            ["fluent-schema", "npm:1.1.0"],
+            ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.1"],
+            ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
             ["prettier", "npm:2.1.2"],
