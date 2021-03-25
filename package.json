@@ -68,7 +68,7 @@
     "supertest": "6.0.1",
     "ts-node": "9.0.0",
     "ts-toolbelt": "8.0.7",
-    "tslib": "2.0.3",
+    "tslib": "2.1.0",
     "typescript": "4.0.5"
   },
   "peerDependencies": {
