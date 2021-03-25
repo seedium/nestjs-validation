@@ -87,9 +87,8 @@ export class ValidationCoreModule implements OnApplicationBootstrap {
       };
     }
     const inject = [
-      (options.useClass || options.useExisting) as Type<
-        ValidationModuleOptionsFactory
-      >,
+      (options.useClass ||
+        options.useExisting) as Type<ValidationModuleOptionsFactory>,
     ];
     return {
       provide: VALIDATION_MODULE_OPTIONS,
