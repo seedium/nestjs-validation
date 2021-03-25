@@ -63,7 +63,7 @@
     "rxjs": "6.6.3",
     "semver": "7.3.4",
     "sinon": "9.2.3",
-    "sinon-chai": "3.5.0",
+    "sinon-chai": "3.6.0",
     "source-map-support": "0.5.19",
     "supertest": "6.0.1",
     "ts-node": "9.0.0",
