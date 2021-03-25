@@ -5273,7 +5273,7 @@ fsevents@~2.3.1:
     source-map-support: 0.5.19
     supertest: 6.0.1
     ts-node: 9.0.0
-    ts-toolbelt: 8.0.7
+    ts-toolbelt: 8.4.0
     tslib: 2.0.3
     typescript: 4.0.5
   peerDependencies:
@@ -7394,10 +7394,10 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"ts-toolbelt@npm:8.0.7":
-  version: 8.0.7
-  resolution: "ts-toolbelt@npm:8.0.7"
-  checksum: ca5b2088fb10f507d4d482111dbcd1f353fd915d332608e182eebe343c56cddeb3651650ee2ef3f1052ee5506890c6763b08fd63fe324c824e6e616cc526fe41
+"ts-toolbelt@npm:8.4.0":
+  version: 8.4.0
+  resolution: "ts-toolbelt@npm:8.4.0"
+  checksum: dbc3ad2626b3ec3d0d23f800b6097deeb1895b6f07a1bc6b8c8933054255c93182d208f1b4b5a9a0a7dbb97516c5b828f4e0f1849b4b42145ba26864f49b57f9
   languageName: node
   linkType: hard
 
