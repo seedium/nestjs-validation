@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.2.0"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
-            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
+            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
@@ -683,14 +683,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.5.4"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-d0b426a81a/0/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
@@ -2868,7 +2868,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.9.1-5a7342ca0f/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.9.1-5a7342ca0f-3f36046624.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.9.1"]
           ],
@@ -3482,20 +3482,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint-config-prettier", [
-        ["npm:6.15.0", {
-          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-6.15.0-d2085588b4-a790bc6169.zip/node_modules/eslint-config-prettier/",
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.1.0-bed7d48d71-409d3a071f.zip/node_modules/eslint-config-prettier/",
           "packageDependencies": [
-            ["eslint-config-prettier", "npm:6.15.0"]
+            ["eslint-config-prettier", "npm:8.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-prettier-virtual-5e072ebf61/0/cache/eslint-config-prettier-npm-6.15.0-d2085588b4-a790bc6169.zip/node_modules/eslint-config-prettier/",
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0", {
+          "packageLocation": "./.yarn/$$virtual/eslint-config-prettier-virtual-c6d44ef213/0/cache/eslint-config-prettier-npm-8.1.0-bed7d48d71-409d3a071f.zip/node_modules/eslint-config-prettier/",
           "packageDependencies": [
-            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
+            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["@types/eslint", null],
-            ["eslint", "npm:7.13.0"],
-            ["get-stdin", "npm:6.0.0"]
+            ["eslint", "npm:7.13.0"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -4206,13 +4205,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/get-stdin-npm-6.0.0-22ebabe125-b51d664838.zip/node_modules/get-stdin/",
-          "packageDependencies": [
-            ["get-stdin", "npm:6.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:8.0.0", {
           "packageLocation": "./.yarn/cache/get-stdin-npm-8.0.0-920f876bc2-009a4c4248.zip/node_modules/get-stdin/",
           "packageDependencies": [
@@ -4673,7 +4665,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.0", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.0-b6c2d49d0e/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.0-b6c2d49d0e-c212d9732d.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.0"],
             ["chalk", "npm:4.1.0"],
@@ -6181,7 +6173,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.2.0"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.13.0"],
-            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:6.15.0"],
+            ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],

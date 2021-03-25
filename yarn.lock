@@ -2748,16 +2748,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:6.15.0":
-  version: 6.15.0
-  resolution: "eslint-config-prettier@npm:6.15.0"
-  dependencies:
-    get-stdin: ^6.0.0
+"eslint-config-prettier@npm:8.1.0":
+  version: 8.1.0
+  resolution: "eslint-config-prettier@npm:8.1.0"
   peerDependencies:
-    eslint: ">=3.14.1"
+    eslint: ">=7.0.0"
   bin:
-    eslint-config-prettier-check: bin/cli.js
-  checksum: a790bc61699e43a2edc5453488576cd977fad3b3cf99c129c10760ce6970d422923fddf80b65b2b10a93c00af0180a854e4b7824cc268e5957826cbe5b969e90
+    eslint-config-prettier: bin/cli.js
+  checksum: 409d3a071f8228d4c958a6a9be9d5ec2b357ce21b7b6cbb137096cade2c31f008a0a3c3533dee8979c0cd944f220a959710b30fd86f8b96f0ef1f4f557d740b3
   languageName: node
   linkType: hard
 
@@ -3442,13 +3440,6 @@ fsevents@~2.1.2:
   version: 4.0.1
   resolution: "get-stdin@npm:4.0.1"
   checksum: ba122b05691e29aa1c93f9dfe76671c23b311e5f299c4205c030c00a656045fcf56d2bb5a924b6cd576f278563643b6689b50aa54fc87abcdc2e6e8eda09920e
-  languageName: node
-  linkType: hard
-
-"get-stdin@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "get-stdin@npm:6.0.0"
-  checksum: b51d664838aef7f8353dc57371ce59cea54d8d584fec015a9d89d24561e95b97806d5b5ba120bc81574c9ed63cb3e210176ffa0ff9263c7e7ba4d56d0fe54913
   languageName: node
   linkType: hard
 
@@ -5219,7 +5210,7 @@ fsevents@~2.1.2:
     chai: 4.2.0
     conventional-changelog-angular: 5.0.12
     eslint: 7.13.0
-    eslint-config-prettier: 6.15.0
+    eslint-config-prettier: 8.1.0
     fluent-json-schema: 2.0.4
     husky: 4.3.0
     light-my-request: 4.4.1
