@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.0.1"],
             ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:9.0.0"],
-            ["ts-toolbelt", "npm:8.0.7"],
+            ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.0.3"],
             ["typescript", "patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=cc6730"]
           ],
@@ -693,14 +693,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-0dc93fe899/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.6.15"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-0dc93fe899/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-0dc93fe899/0/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
@@ -4734,7 +4734,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.8", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.8-f7cd00e56d/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.8-f7cd00e56d-1ac4fb51ff.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.8"],
             ["chalk", "npm:4.1.0"],
@@ -6253,7 +6253,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.0.1"],
             ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:9.0.0"],
-            ["ts-toolbelt", "npm:8.0.7"],
+            ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.0.3"],
             ["typescript", "patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=cc6730"]
           ],
@@ -8564,10 +8564,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-toolbelt", [
-        ["npm:8.0.7", {
-          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-8.0.7-aeb4791066-ca5b2088fb.zip/node_modules/ts-toolbelt/",
+        ["npm:9.6.0", {
+          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-9.6.0-a95699c8d0-c21a84624f.zip/node_modules/ts-toolbelt/",
           "packageDependencies": [
-            ["ts-toolbelt", "npm:8.0.7"]
+            ["ts-toolbelt", "npm:9.6.0"]
           ],
           "linkType": "HARD",
         }]
