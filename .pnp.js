@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
-            ["prettier", "npm:2.1.2"],
+            ["prettier", "npm:2.2.1"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.2.1"],
             ["rimraf", "npm:3.0.2"],
@@ -683,14 +683,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.5.4"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-d0b426a81a/0/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
@@ -2868,7 +2868,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.9.1-5a7342ca0f/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.9.1-5a7342ca0f-3f36046624.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.9.1"]
           ],
@@ -4673,7 +4673,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.0", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.0-b6c2d49d0e/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.0-b6c2d49d0e-c212d9732d.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.0"],
             ["chalk", "npm:4.1.0"],
@@ -6189,7 +6189,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
-            ["prettier", "npm:2.1.2"],
+            ["prettier", "npm:2.2.1"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.2.1"],
             ["rimraf", "npm:3.0.2"],
@@ -6976,10 +6976,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.1.2", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.1.2-9d456ef3cd-bedc24c568.zip/node_modules/prettier/",
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.2.1-e0670992f8-92c6c9f4b8.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.1.2"]
+            ["prettier", "npm:2.2.1"]
           ],
           "linkType": "HARD",
         }]
