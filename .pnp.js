@@ -62,7 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
-            ["lint-staged", "npm:10.5.1"],
+            ["lint-staged", "npm:10.5.4"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
@@ -683,14 +683,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.5.4"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-d0b426a81a/0/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
@@ -2868,7 +2868,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.9.1-5a7342ca0f/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.9.1-5a7342ca0f-3f36046624.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.9.1"]
           ],
@@ -4673,7 +4673,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.0", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.0-b6c2d49d0e/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.0-b6c2d49d0e-c212d9732d.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.0"],
             ["chalk", "npm:4.1.0"],
@@ -5501,10 +5501,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.5.1", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.5.1-157822e544-d22748dde5.zip/node_modules/lint-staged/",
+        ["npm:10.5.4", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.5.4-cd5df63f2a-dbcafe3679.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.5.1"],
+            ["lint-staged", "npm:10.5.4"],
             ["chalk", "npm:4.1.0"],
             ["cli-truncate", "npm:2.1.0"],
             ["commander", "npm:6.2.1"],
@@ -5513,7 +5513,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dedent", "npm:0.7.0"],
             ["enquirer", "npm:2.3.6"],
             ["execa", "npm:4.1.0"],
-            ["listr2", "virtual:157822e544031a7f77b6dea0a305d1050613b7dac8343fe938ae04e966f280b6f46e07d912d9857c8cddd542d16d9c27d5d05da7aed9bac69bbb23439295431a#npm:3.4.3"],
+            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3"],
             ["log-symbols", "npm:4.1.0"],
             ["micromatch", "npm:4.0.2"],
             ["normalize-path", "npm:3.0.0"],
@@ -5532,10 +5532,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:157822e544031a7f77b6dea0a305d1050613b7dac8343fe938ae04e966f280b6f46e07d912d9857c8cddd542d16d9c27d5d05da7aed9bac69bbb23439295431a#npm:3.4.3", {
-          "packageLocation": "./.yarn/$$virtual/listr2-virtual-8e322555d9/0/cache/listr2-npm-3.4.3-6205834e61-e5c2a8561c.zip/node_modules/listr2/",
+        ["virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3", {
+          "packageLocation": "./.yarn/$$virtual/listr2-virtual-1f3f776580/0/cache/listr2-npm-3.4.3-6205834e61-e5c2a8561c.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "virtual:157822e544031a7f77b6dea0a305d1050613b7dac8343fe938ae04e966f280b6f46e07d912d9857c8cddd542d16d9c27d5d05da7aed9bac69bbb23439295431a#npm:3.4.3"],
+            ["listr2", "virtual:cd5df63f2a5b353bc617d9d0b55f1b1ca86360bba86697ffb790b321a77a7bfe28d863044032bbcee7d8d175129ae81ece55859f24a980569f086a0690ac2b32#npm:3.4.3"],
             ["@types/enquirer", null],
             ["chalk", "npm:4.1.0"],
             ["cli-truncate", "npm:2.1.0"],
@@ -6185,7 +6185,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.0"],
             ["light-my-request", "npm:4.4.1"],
-            ["lint-staged", "npm:10.5.1"],
+            ["lint-staged", "npm:10.5.4"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.2.1"],
             ["nyc", "npm:15.1.0"],
