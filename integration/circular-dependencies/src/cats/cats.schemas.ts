@@ -6,4 +6,7 @@ export const catDto = S.object()
   .additionalProperties(false)
   .prop('name', S.string())
   .prop('age', S.number())
-  .prop('user', createRef(() => userDto));
+  .prop(
+    'user',
+    createRef(() => userDto),
+  );

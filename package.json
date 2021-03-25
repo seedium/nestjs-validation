@@ -23,7 +23,7 @@
     "watch": "yarn clean && tsc -w",
     "lint": "eslint lib/**/*.ts",
     "lint:test": "eslint -c .eslintrc.spec.yaml test/**/*.spec.ts",
-    "format": "prettier '{lib,test}/**/*.ts' '{lib,test}/*.ts'",
+    "format": "prettier '**/*.ts' --write",
     "test": "yarn clean && nyc --nycrc-path .nycrc.yaml mocha --reporter spec --exit 'test/**/*.spec.ts' 'test/*.spec.ts'",
     "test:integration": "yarn clean && nyc mocha 'integration/**/*.spec.ts' --reporter spec --exit",
     "prerelease": "yarn clean && yarn build",
