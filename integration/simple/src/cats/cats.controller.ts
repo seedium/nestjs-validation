@@ -1,4 +1,12 @@
-import { Controller, Get, Headers, Param, Post, Query, Body } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Headers,
+  Param,
+  Post,
+  Query,
+  Body,
+} from '@nestjs/common';
 import { ApiQuery, ApiBody, ApiResponse } from '@nestjs/swagger';
 import { ApiHeader } from '../../../../lib/decorators';
 
@@ -41,7 +49,7 @@ export class CatsController {
       throw new Error('limit is not number');
     }
     if (options.extra) {
-      throw new Error('Should not pass extra option')
+      throw new Error('Should not pass extra option');
     }
     return {
       success: true,
@@ -67,7 +75,7 @@ export class CatsController {
       throw new Error('page is not number');
     }
     if (options.extra) {
-      throw new Error('Should not pass extra option')
+      throw new Error('Should not pass extra option');
     }
     return {
       success: true,
@@ -83,7 +91,10 @@ export class CatsController {
     },
   })
   public headers(@Headers() headers: any) {
-    if (!headers['some-test-header'] || typeof headers['some-test-header'] !== 'number') {
+    if (
+      !headers['some-test-header'] ||
+      typeof headers['some-test-header'] !== 'number'
+    ) {
       throw new Error(`Header wrong`);
     }
     if (headers['some-extra-header']) {
@@ -104,7 +115,7 @@ export class CatsController {
         foo: {
           type: 'number',
         },
-      }
+      },
     },
   })
   public body(@Body() body: any) {

@@ -6,4 +6,7 @@ export const userDto = S.object()
   .additionalProperties(false)
   .prop('firstName', S.string())
   .prop('lastName', S.string())
-  .prop('cat', createRef(() => catDto));
+  .prop(
+    'cat',
+    createRef(() => catDto),
+  );
