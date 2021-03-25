@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.14"],
             ["@types/mocha", "npm:8.2.0"],
             ["@types/node", "npm:14.14.8"],
-            ["@types/sinon", "npm:9.0.8"],
+            ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@types/supertest", "npm:2.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
             ["semver", "npm:7.3.4"],
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.0.1"],
@@ -683,14 +683,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.5.4"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-d0b426a81a/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-d0b426a81a/0/cache/@nestjs-core-npm-7.5.4-5b1206937f-9e1ab64bdb.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.5.4"],
@@ -1304,14 +1304,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-sinon-npm-9.0.11-231734b808-c84ccbd5ac.zip/node_modules/@types/sinon/",
           "packageDependencies": [
             ["@types/sinon", "npm:9.0.11"],
-            ["@types/sinonjs__fake-timers", "npm:6.0.2"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:9.0.8", {
-          "packageLocation": "./.yarn/cache/@types-sinon-npm-9.0.8-f2d513f357-b6edb8f2c8.zip/node_modules/@types/sinon/",
-          "packageDependencies": [
-            ["@types/sinon", "npm:9.0.8"],
             ["@types/sinonjs__fake-timers", "npm:6.0.2"]
           ],
           "linkType": "HARD",
@@ -2868,7 +2860,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.9.1-5a7342ca0f/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.9.1-5a7342ca0f-3f36046624.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.9.1"]
           ],
@@ -4673,7 +4665,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.0", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.0-b6c2d49d0e/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.0-b6c2d49d0e-c212d9732d.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.0"],
             ["chalk", "npm:4.1.0"],
@@ -6172,7 +6164,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.14"],
             ["@types/mocha", "npm:8.2.0"],
             ["@types/node", "npm:14.14.8"],
-            ["@types/sinon", "npm:9.0.8"],
+            ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@types/supertest", "npm:2.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.1"],
@@ -6195,7 +6187,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
             ["semver", "npm:7.3.4"],
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.0.1"],
@@ -7852,10 +7844,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sinon", [
-        ["npm:9.2.3", {
-          "packageLocation": "./.yarn/cache/sinon-npm-9.2.3-dfb20a3aca-7c818e8e3b.zip/node_modules/sinon/",
+        ["npm:9.2.4", {
+          "packageLocation": "./.yarn/cache/sinon-npm-9.2.4-3c6e379b87-c285c3750a.zip/node_modules/sinon/",
           "packageDependencies": [
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["@sinonjs/commons", "npm:1.8.2"],
             ["@sinonjs/fake-timers", "npm:6.0.1"],
             ["@sinonjs/samsam", "npm:5.3.1"],
@@ -7879,9 +7871,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.5.0"],
             ["@types/chai", "npm:4.2.14"],
-            ["@types/sinon", "npm:9.0.8"],
+            ["@types/sinon", "npm:9.0.11"],
             ["chai", "npm:4.2.0"],
-            ["sinon", "npm:9.2.3"]
+            ["sinon", "npm:9.2.4"]
           ],
           "packagePeers": [
             "@types/chai",
