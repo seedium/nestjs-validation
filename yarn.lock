@@ -1187,15 +1187,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:7.2.3, ajv@npm:^7.0.2":
-  version: 7.2.3
-  resolution: "ajv@npm:7.2.3"
+"ajv@npm:7.2.4":
+  version: 7.2.4
+  resolution: "ajv@npm:7.2.4"
   dependencies:
     fast-deep-equal: ^3.1.1
     json-schema-traverse: ^1.0.0
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
-  checksum: 899b5879497c7df1f6ead6dffab789854b3371f33797e210b51a398cf325a54fd6855a20a757f7eb7b0f8fbf370d819aa5ec1cd335e7d31b421fb343a26a0fcc
+  checksum: 17be02b9a6c72317acc62fb15dde885d3d9e15ac44b025923697a44787cc69cceacf4c7e4ed43769eb313a64a3fd35ba7d308f36ef2eba136f4495d1cf513001
   languageName: node
   linkType: hard
 
@@ -1208,6 +1208,18 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^7.0.2":
+  version: 7.2.3
+  resolution: "ajv@npm:7.2.3"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    json-schema-traverse: ^1.0.0
+    require-from-string: ^2.0.2
+    uri-js: ^4.2.2
+  checksum: 899b5879497c7df1f6ead6dffab789854b3371f33797e210b51a398cf325a54fd6855a20a757f7eb7b0f8fbf370d819aa5ec1cd335e7d31b421fb343a26a0fcc
   languageName: node
   linkType: hard
 
@@ -5264,7 +5276,7 @@ fsevents@~2.3.1:
     "@types/supertest": 2.0.10
     "@typescript-eslint/eslint-plugin": 4.19.0
     "@typescript-eslint/parser": 4.19.0
-    ajv: 7.2.3
+    ajv: 7.2.4
     chai: 4.3.4
     conventional-changelog-angular: 5.0.12
     eslint: 7.23.0
