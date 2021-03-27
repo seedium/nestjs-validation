@@ -57,7 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.2.3"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.12"],
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.8"],
@@ -1396,7 +1396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.19.0"],
             ["@typescript-eslint/scope-manager", "npm:4.19.0"],
             ["debug", "virtual:901e1408cc8bfef5550e648cc3ee4f1ec6e307e3f5baab3ad60f0ba461a3df0a2fb4207ed57f6ec68edeacbb88063dcc84f3c35bb45638ba421a021eb350b42b#npm:4.3.2"],
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["functional-red-black-tree", "npm:1.0.1"],
             ["lodash", "npm:4.17.21"],
             ["regexpp", "npm:3.1.0"],
@@ -1431,7 +1431,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/scope-manager", "npm:4.19.0"],
             ["@typescript-eslint/types", "npm:4.19.0"],
             ["@typescript-eslint/typescript-estree", "virtual:7b0f356929b82d2d6a6cfbcfc173eb40cfa736cde88f9e79ba490a761634a1ed5d8da7591af0bc3df7beec89652f9b30d172dc4a39717623ed04ec9dca342095#npm:4.19.0"],
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["eslint-scope", "npm:5.1.1"],
             ["eslint-utils", "npm:2.1.0"]
           ],
@@ -1459,7 +1459,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/types", "npm:4.19.0"],
             ["@typescript-eslint/typescript-estree", "virtual:2a0221f17d166d6556737583b638d95be08146d781dcd0ac540b732c2ed959bd63e7997a10147ea4a2881f8c559bc615a955f00e70e616601be44f61d214d52a#npm:4.19.0"],
             ["debug", "virtual:901e1408cc8bfef5550e648cc3ee4f1ec6e307e3f5baab3ad60f0ba461a3df0a2fb4207ed57f6ec68edeacbb88063dcc84f3c35bb45638ba421a021eb350b42b#npm:4.3.2"],
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "packagePeers": [
@@ -3492,10 +3492,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint", [
-        ["npm:7.22.0", {
-          "packageLocation": "./.yarn/cache/eslint-npm-7.22.0-52ec99ef38-9be0a215b6.zip/node_modules/eslint/",
+        ["npm:7.23.0", {
+          "packageLocation": "./.yarn/cache/eslint-npm-7.23.0-899360d658-f444869506.zip/node_modules/eslint/",
           "packageDependencies": [
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["@babel/code-frame", "npm:7.12.11"],
             ["@eslint/eslintrc", "npm:0.4.0"],
             ["ajv", "npm:6.12.6"],
@@ -3550,7 +3550,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["@types/eslint", null],
-            ["eslint", "npm:7.22.0"]
+            ["eslint", "npm:7.23.0"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -6249,7 +6249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.2.3"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.12"],
-            ["eslint", "npm:7.22.0"],
+            ["eslint", "npm:7.23.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.1.0"],
             ["fluent-json-schema", "npm:2.0.4"],
             ["husky", "npm:4.3.8"],
