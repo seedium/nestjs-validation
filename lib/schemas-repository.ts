@@ -1,10 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { JSONSchema, BaseSchema } from 'fluent-json-schema';
+import { AsyncValidateFunction } from 'ajv';
+import * as fastJson from 'fast-json-stringify';
 import {
   OperationSchemas,
   OperationValidators,
   PathsSchemas,
   ResponsesSchemas,
+  LoadSchemasOptions,
+  FastJsonStringifier,
 } from './interfaces';
 import { AjvValidator } from './validators';
 
@@ -12,7 +16,10 @@ import { AjvValidator } from './validators';
 export class SchemasRepository {
   private _schemas: Record<string, OperationValidators> = {};
   constructor(private readonly _ajv: AjvValidator) {}
-  public loadSchemas(pathsSchemas: PathsSchemas): void {
+  public loadSchemas(
+    pathsSchemas: PathsSchemas,
+    { fastSerialization }: LoadSchemasOptions = {},
+  ): void {
     this.iterateThroughEachMethod(
       pathsSchemas,
       (operationId, type, jsonSchemaOrResponses) => {
@@ -21,10 +28,9 @@ export class SchemasRepository {
         }
         this._schemas[operationId] = this._schemas[operationId] ?? {};
         if (this.isJsonSchema(jsonSchemaOrResponses)) {
-          this._schemas[operationId][type] = this._ajv.ajv.compile({
-            $async: true,
-            ...jsonSchemaOrResponses.valueOf(),
-          });
+          this._schemas[operationId][type] = this.compileJsonSchema(
+            jsonSchemaOrResponses,
+          );
         } else if (this.isResponsesSchemas(type, jsonSchemaOrResponses)) {
           this._schemas[operationId].responses =
             this._schemas[operationId].responses ?? {};
@@ -35,10 +41,10 @@ export class SchemasRepository {
               }
               this._schemas[operationId].responses[
                 statusCode
-              ] = this._ajv.ajv.compile({
-                $async: true,
-                ...jsonSchema.valueOf(),
-              });
+              ] = this.getAjvSerializationValidator(
+                jsonSchema,
+                fastSerialization,
+              );
             },
           );
         } else {
@@ -67,6 +73,21 @@ export class SchemasRepository {
         cb(operationId, type, jsonSchemaOrResponses),
       ),
     );
+  }
+  private getAjvSerializationValidator(
+    jsonSchema: JSONSchema,
+    fastSerialization?: boolean,
+  ): AsyncValidateFunction | FastJsonStringifier {
+    if (fastSerialization) {
+      return fastJson(jsonSchema.valueOf());
+    }
+    return this.compileJsonSchema(jsonSchema);
+  }
+  private compileJsonSchema(jsonSchema: JSONSchema): AsyncValidateFunction {
+    return this._ajv.ajv.compile({
+      $async: true,
+      ...jsonSchema.valueOf(),
+    });
   }
   private isJsonSchema(
     maybeJsonSchema: unknown,

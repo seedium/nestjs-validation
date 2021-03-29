@@ -3,17 +3,30 @@ import {
   NestInterceptor,
   ExecutionContext,
   CallHandler,
+  Inject,
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { AsyncValidateFunction } from 'ajv';
+import type { FastifyReply } from 'fastify';
+import type { Response } from '@nestjs/common';
+import { AjvValidator } from '../validators';
 import { ValidationContextService } from '../services';
 import { ValidationException } from '../exceptions';
-import { SerializerTypeValidator } from '../interfaces';
-import { AsyncValidateFunction } from 'ajv';
+import {
+  SerializerTypeValidator,
+  ValidationModuleOptions,
+} from '../interfaces';
+import { VALIDATION_MODULE_OPTIONS } from '../validation.constants';
 
 @Injectable()
 export class JsonSchemaSerializerInterceptor implements NestInterceptor {
-  constructor(private readonly _validationContext: ValidationContextService) {}
+  constructor(
+    private readonly _validationContext: ValidationContextService,
+    private readonly _ajv: AjvValidator,
+    @Inject(VALIDATION_MODULE_OPTIONS)
+    private readonly _validationModuleOptions: ValidationModuleOptions,
+  ) {}
   public async intercept(
     context: ExecutionContext,
     next: CallHandler,
@@ -54,7 +67,10 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
           .map(({ type, validator }) => validator(req[type])),
       );
     } catch (err) {
-      throw new ValidationException(err.errors);
+      throw new ValidationException(
+        err.errors,
+        this._ajv.ajv.errorsText(err.errors),
+      );
     }
   }
   private async onResponse<T = unknown>(
@@ -70,9 +86,16 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
       return data;
     }
     try {
-      await validator(data);
+      const maybeJsonString = await validator(data);
+      if (this._validationModuleOptions.fastSerialization) {
+        this.setApplicationJsonType(context);
+        return maybeJsonString;
+      }
     } catch (err) {
-      throw new ValidationException(err.errors);
+      throw new ValidationException(
+        err.errors,
+        this._ajv.ajv.errorsText(err.errors),
+      );
     }
     return data;
   }
@@ -87,5 +110,18 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
       serializerValidator: SerializerTypeValidator,
     ): serializerValidator is SerializerTypeValidator<AsyncValidateFunction> =>
       !!serializerValidator.validator;
+  }
+  private setApplicationJsonType(context: ExecutionContext): void {
+    const res = context.switchToHttp().getResponse<FastifyReply | Response>();
+    if (this.isFastifyResponse(res)) {
+      res.type('application/json');
+      return;
+    }
+    throw new Error(
+      `The application is using Express adapter which currently is not supported`,
+    );
+  }
+  private isFastifyResponse(res: FastifyReply | Response): res is FastifyReply {
+    return !!(res as FastifyReply).raw;
   }
 }

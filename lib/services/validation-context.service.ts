@@ -1,6 +1,6 @@
 import { ExecutionContext, Injectable } from '@nestjs/common';
 import { AsyncValidateFunction } from 'ajv';
-import { OperationSchemas } from '../interfaces';
+import { OperationSchemas, FastJsonStringifier } from '../interfaces';
 import { SchemasRepository } from '../schemas-repository';
 
 @Injectable()
@@ -22,7 +22,7 @@ export class ValidationContextService {
   public getResponseValidatorByStatusCode(
     statusCode: number,
     context: ExecutionContext,
-  ): AsyncValidateFunction | null {
+  ): AsyncValidateFunction | FastJsonStringifier | null {
     const operationId = this.getOperationId(context);
     const operationValidators = this._schemasRepository.getOperationValidators(
       operationId,
