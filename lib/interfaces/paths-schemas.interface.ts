@@ -1,6 +1,8 @@
 import { JSONSchema } from 'fluent-json-schema';
 import { AsyncValidateFunction } from 'ajv';
 
+export type FastJsonStringifier = (_doc: any) => any;
+
 export type PathsSchemas = Record<string, OperationSchemas>;
 
 export interface ResponsesSchemas<T> {
@@ -19,7 +21,7 @@ export interface OperationValidators extends Record<string, any> {
   query: AsyncValidateFunction | null;
   body: AsyncValidateFunction | null;
   headers: AsyncValidateFunction | null;
-  responses: ResponsesSchemas<AsyncValidateFunction>;
+  responses: ResponsesSchemas<AsyncValidateFunction | FastJsonStringifier>;
 }
 
 export interface DefaultObjectSchema {

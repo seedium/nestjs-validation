@@ -1,7 +1,11 @@
 import { ModuleMetadata, Type } from '@nestjs/common';
 import { Options as AjvOptions } from 'ajv';
 
-export type ValidationModuleOptions = AjvOptions;
+export type ValidationModuleOptions = AjvOptions & LoadSchemasOptions;
+
+export interface LoadSchemasOptions {
+  fastSerialization?: boolean;
+}
 
 export interface ValidationModuleOptionsFactory {
   createValidationOptions():

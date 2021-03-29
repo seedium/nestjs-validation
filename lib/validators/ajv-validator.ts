@@ -3,23 +3,26 @@ import Ajv, { Options } from 'ajv';
 import { JSONSchema } from 'fluent-json-schema';
 import { SchemaForwardRef } from '../interfaces';
 
+const defaultOptions: Options = {
+  strict: false,
+  removeAdditional: true,
+  useDefaults: true,
+  coerceTypes: true,
+  allErrors: true,
+};
+
 @Injectable()
 export class AjvValidator {
-  protected _ajv: Ajv;
+  protected readonly _ajv: Ajv;
 
   public get ajv(): Ajv {
     return this._ajv;
   }
-
-  constructor(
-    options: Options = {
-      strict: false,
-      removeAdditional: true,
-      useDefaults: true,
-      coerceTypes: true,
-      allErrors: true,
-    },
-  ) {
+  constructor(options?: Options) {
+    options = {
+      ...defaultOptions,
+      ...options,
+    };
     this._ajv = new Ajv(options);
     this.addCircularRefKeyword(this._ajv);
   }

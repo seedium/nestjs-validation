@@ -36,6 +36,7 @@
     "@nestjs/common": "7.6.15",
     "@nestjs/core": "7.6.15",
     "@nestjs/platform-express": "7.6.15",
+    "@nestjs/platform-fastify": "^7.6.15",
     "@nestjs/swagger": "4.8.0",
     "@nestjs/testing": "7.6.15",
     "@release-it/conventional-changelog": "2.0.1",
@@ -51,6 +52,7 @@
     "conventional-changelog-angular": "5.0.12",
     "eslint": "7.23.0",
     "eslint-config-prettier": "8.1.0",
+    "fastify": "^3.14.1",
     "husky": "4.3.8",
     "light-my-request": "4.4.1",
     "lint-staged": "10.5.4",
@@ -80,6 +82,7 @@
   },
   "dependencies": {
     "ajv": "8.0.1",
+    "fast-json-stringify": "^2.5.2",
     "fluent-json-schema": "2.0.4",
     "lodash.pickby": "4.6.0"
   }

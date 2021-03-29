@@ -5,6 +5,7 @@ import {
   Provider,
   Module,
   Global,
+  Inject,
 } from '@nestjs/common';
 import {
   ValidationModuleOptions,
@@ -19,7 +20,11 @@ import { SchemasRepository } from './schemas-repository';
 @Global()
 @Module({})
 export class ValidationCoreModule implements OnApplicationBootstrap {
-  static forRoot(options?: ValidationModuleOptions): DynamicModule {
+  static forRoot(options: ValidationModuleOptions = {}): DynamicModule {
+    const validationModuleOptions = {
+      provide: VALIDATION_MODULE_OPTIONS,
+      useValue: options,
+    };
     const validationProviders = this.createValidationProviders(options);
     return {
       module: ValidationCoreModule,
@@ -27,8 +32,13 @@ export class ValidationCoreModule implements OnApplicationBootstrap {
         ...validationProviders,
         SchemasRepository,
         SwaggerExplorerServices,
+        validationModuleOptions,
       ],
-      exports: [...validationProviders, SchemasRepository],
+      exports: [
+        ...validationProviders,
+        SchemasRepository,
+        validationModuleOptions,
+      ],
     };
   }
   static forRootAsync(options: ValidationModuleAsyncOptions): DynamicModule {
@@ -100,9 +110,14 @@ export class ValidationCoreModule implements OnApplicationBootstrap {
   constructor(
     private readonly _swaggerExplorer: SwaggerExplorerServices,
     private readonly _schemasRepository: SchemasRepository,
+    @Inject(VALIDATION_MODULE_OPTIONS)
+    private readonly _validationModuleOptions: ValidationModuleOptions,
   ) {}
   onApplicationBootstrap(): void {
     const paths = this._swaggerExplorer.explore();
-    this._schemasRepository.loadSchemas(paths);
+    this._schemasRepository.loadSchemas(paths, {
+      fastSerialization:
+        this._validationModuleOptions.fastSerialization ?? false,
+    });
   }
 }
