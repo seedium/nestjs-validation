@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.37"],
             ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
-            ["@types/supertest", "npm:2.0.10"],
+            ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.19.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.19.0"],
             ["ajv", "npm:8.0.3"],
@@ -1369,10 +1369,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/supertest", [
-        ["npm:2.0.10", {
-          "packageLocation": "./.yarn/cache/@types-supertest-npm-2.0.10-112745dbce-9ceae7e743.zip/node_modules/@types/supertest/",
+        ["npm:2.0.11", {
+          "packageLocation": "./.yarn/cache/@types-supertest-npm-2.0.11-a547f689c9-a4b001038d.zip/node_modules/@types/supertest/",
           "packageDependencies": [
-            ["@types/supertest", "npm:2.0.10"],
+            ["@types/supertest", "npm:2.0.11"],
             ["@types/superagent", "npm:4.1.10"]
           ],
           "linkType": "HARD",
@@ -6254,7 +6254,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.37"],
             ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
-            ["@types/supertest", "npm:2.0.10"],
+            ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.19.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.19.0"],
             ["ajv", "npm:8.0.3"],
