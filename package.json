@@ -27,7 +27,7 @@
     "test": "yarn clean && nyc --nycrc-path .nycrc.yaml mocha --reporter spec --exit 'test/**/*.spec.ts' 'test/*.spec.ts'",
     "test:integration": "yarn clean && nyc mocha 'integration/**/*.spec.ts' --reporter spec --exit",
     "prerelease": "yarn clean && yarn build",
-    "release": "release-it"
+    "release": "yarn prerelease && release-it"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.1",
