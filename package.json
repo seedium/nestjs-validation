@@ -1,6 +1,6 @@
 {
   "name": "nestjs-validation",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Validation module for NestJS application",
   "repository": {
     "type": "git",

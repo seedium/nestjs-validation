@@ -1,3 +1,5 @@
+## [2.0.2](https://github.com/seedium/nestjs-validation/compare/2.0.1...2.0.2) (2021-04-05)
+
 ## [2.0.1](https://github.com/seedium/nestjs-validation/compare/2.0.0...2.0.1) (2021-04-05)
 
 
