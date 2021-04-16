@@ -1212,15 +1212,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:8.0.5":
-  version: 8.0.5
-  resolution: "ajv@npm:8.0.5"
+"ajv@npm:8.1.0":
+  version: 8.1.0
+  resolution: "ajv@npm:8.1.0"
   dependencies:
     fast-deep-equal: ^3.1.1
     json-schema-traverse: ^1.0.0
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
-  checksum: 721b491110bda18a6e718dc8a3bca091ea8bb1b92e6e809baffc63cb9a5faf1ca424eb1639277ed00bc602f8614e936f3b5d96de28778fe0eedd76bb8c1d39d3
+  checksum: d946a17d0f44418863d23282868ce79c51ba3a3ca9cca4eb9a0e66151c9f8cf790febb4a1ffe5a831a52d21639d3e140586736406cdde177a804aebacd45f2ca
   languageName: node
   linkType: hard
 
@@ -5287,7 +5287,7 @@ fsevents@~2.3.1:
     "@types/supertest": 2.0.11
     "@typescript-eslint/eslint-plugin": 4.20.0
     "@typescript-eslint/parser": 4.20.0
-    ajv: 8.0.5
+    ajv: 8.1.0
     chai: 4.3.4
     conventional-changelog-angular: 5.0.12
     eslint: 7.24.0
