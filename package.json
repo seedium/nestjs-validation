@@ -49,7 +49,7 @@
     "@typescript-eslint/parser": "4.20.0",
     "chai": "4.3.4",
     "conventional-changelog-angular": "5.0.12",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-config-prettier": "8.1.0",
     "husky": "4.3.8",
     "light-my-request": "4.4.1",
