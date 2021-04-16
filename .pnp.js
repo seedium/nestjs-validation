@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.20.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.20.0"],
-            ["ajv", "npm:8.0.5"],
+            ["ajv", "npm:8.1.0"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.24.0"],
@@ -1683,10 +1683,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.0.5", {
-          "packageLocation": "./.yarn/cache/ajv-npm-8.0.5-9486a1c592-721b491110.zip/node_modules/ajv/",
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.1.0-d9b202be9f-d946a17d0f.zip/node_modules/ajv/",
           "packageDependencies": [
-            ["ajv", "npm:8.0.5"],
+            ["ajv", "npm:8.1.0"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
@@ -6267,7 +6267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.20.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.20.0"],
-            ["ajv", "npm:8.0.5"],
+            ["ajv", "npm:8.1.0"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.24.0"],
