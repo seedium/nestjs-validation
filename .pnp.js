@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.2.0"],
-            ["fluent-json-schema", "npm:2.0.4"],
+            ["fluent-json-schema", "npm:3.0.0"],
             ["husky", "npm:6.0.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.4"],
@@ -4011,10 +4011,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["fluent-json-schema", [
-        ["npm:2.0.4", {
-          "packageLocation": "./.yarn/cache/fluent-json-schema-npm-2.0.4-aef1d0f70c-0ee9cbce39.zip/node_modules/fluent-json-schema/",
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/fluent-json-schema-npm-3.0.0-4263f689b5-dc972dbd4e.zip/node_modules/fluent-json-schema/",
           "packageDependencies": [
-            ["fluent-json-schema", "npm:2.0.4"],
+            ["fluent-json-schema", "npm:3.0.0"],
             ["deepmerge", "npm:4.2.2"]
           ],
           "linkType": "HARD",
@@ -6259,7 +6259,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.2.0"],
-            ["fluent-json-schema", "npm:2.0.4"],
+            ["fluent-json-schema", "npm:3.0.0"],
             ["husky", "npm:6.0.0"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:10.5.4"],
