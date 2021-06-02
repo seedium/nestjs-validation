@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.17"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
-            ["@types/sinon", "npm:10.0.0"],
+            ["@types/sinon", "npm:10.0.2"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.22.0"],
@@ -1167,10 +1167,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.0.5", {
-          "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-7.0.5-441aa64900-5cc43301d3.zip/node_modules/@sinonjs/fake-timers/",
+        ["npm:7.1.2", {
+          "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-7.1.2-2a6b119ac7-5ce48e40db.zip/node_modules/@sinonjs/fake-timers/",
           "packageDependencies": [
-            ["@sinonjs/fake-timers", "npm:7.0.5"],
+            ["@sinonjs/fake-timers", "npm:7.1.2"],
             ["@sinonjs/commons", "npm:1.8.2"]
           ],
           "linkType": "HARD",
@@ -1344,11 +1344,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/sinon", [
-        ["npm:10.0.0", {
-          "packageLocation": "./.yarn/cache/@types-sinon-npm-10.0.0-8ccbdfac6f-4263b63f31.zip/node_modules/@types/sinon/",
+        ["npm:10.0.2", {
+          "packageLocation": "./.yarn/cache/@types-sinon-npm-10.0.2-2a54516cee-44d149b0ba.zip/node_modules/@types/sinon/",
           "packageDependencies": [
-            ["@types/sinon", "npm:10.0.0"],
-            ["@sinonjs/fake-timers", "npm:7.0.5"]
+            ["@types/sinon", "npm:10.0.2"],
+            ["@sinonjs/fake-timers", "npm:7.1.2"]
           ],
           "linkType": "HARD",
         }],
@@ -6249,7 +6249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.17"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
-            ["@types/sinon", "npm:10.0.0"],
+            ["@types/sinon", "npm:10.0.2"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.22.0"],
@@ -7899,7 +7899,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.6.0"],
             ["@types/chai", "npm:4.2.17"],
-            ["@types/sinon", "npm:10.0.0"],
+            ["@types/sinon", "npm:10.0.2"],
             ["chai", "npm:4.3.4"],
             ["sinon", "npm:10.0.0"]
           ],
