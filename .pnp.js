@@ -67,7 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
             ["pinst", "npm:2.1.6"],
-            ["prettier", "npm:2.2.1"],
+            ["prettier", "npm:2.3.1"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.6.1"],
             ["rimraf", "npm:3.0.2"],
@@ -6267,7 +6267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
             ["pinst", "npm:2.1.6"],
-            ["prettier", "npm:2.2.1"],
+            ["prettier", "npm:2.3.1"],
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.6.1"],
             ["rimraf", "npm:3.0.2"],
@@ -7037,10 +7037,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.2.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.2.1-e0670992f8-92c6c9f4b8.zip/node_modules/prettier/",
+        ["npm:2.3.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-9b4a695b87.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.2.1"]
+            ["prettier", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
