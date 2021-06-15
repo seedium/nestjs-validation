@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/seedium/nestjs-validation/compare/2.0.2...2.0.3) (2021-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ajv to v8.1.0 ([1fe811b](https://github.com/seedium/nestjs-validation/commit/1fe811b8f200ac404d229e743b185f5f54e9b4ef))
+* **deps:** upgrade all dependencies and require to use one ajv instance ([726b79a](https://github.com/seedium/nestjs-validation/commit/726b79af2179b302877ac808445e442201458cb9))
+
 ## [2.0.2](https://github.com/seedium/nestjs-validation/compare/2.0.1...2.0.2) (2021-04-05)
 
 ## [2.0.1](https://github.com/seedium/nestjs-validation/compare/2.0.0...2.0.1) (2021-04-05)
