@@ -21,4 +21,4 @@ rules:
     - all
   no-unused-vars:
     - error
-    - argsIgnorePattern: '^_'
+    - varsIgnorePattern: '^_'
