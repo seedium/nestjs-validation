@@ -55,7 +55,7 @@
     "conventional-changelog-angular": "5.0.12",
     "eslint": "7.28.0",
     "eslint-config-prettier": "8.3.0",
-    "husky": "6.0.0",
+    "husky": "7.0.1",
     "light-my-request": "4.4.1",
     "lint-staged": "11.0.0",
     "mocha": "8.4.0",
