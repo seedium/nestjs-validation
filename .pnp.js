@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.28.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
-            ["husky", "npm:6.0.0"],
+            ["husky", "npm:7.0.1"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:11.0.0"],
             ["lodash.pickby", "npm:4.6.0"],
@@ -693,14 +693,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.6.17", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-e50810ab99/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.6.17-57df20dcb0-a5be994489.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.6.17"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-e50810ab99/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-e50810ab99/0/cache/@nestjs-core-npm-7.6.17-57df20dcb0-a5be994489.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
@@ -4819,10 +4819,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/husky-npm-6.0.0-384872ea98-61e1f7f53f.zip/node_modules/husky/",
+        ["npm:7.0.1", {
+          "packageLocation": "./.yarn/cache/husky-npm-7.0.1-b59747cd86-1f6d87cab4.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:6.0.0"]
+            ["husky", "npm:7.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -6362,7 +6362,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.28.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
-            ["husky", "npm:6.0.0"],
+            ["husky", "npm:7.0.1"],
             ["light-my-request", "npm:4.4.1"],
             ["lint-staged", "npm:11.0.0"],
             ["lodash.pickby", "npm:4.6.0"],
