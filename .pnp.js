@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.0"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.17.3"],
             ["@types/sinon", "npm:10.0.2"],
@@ -693,14 +693,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.6.17", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-e50810ab99/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.6.17-57df20dcb0-a5be994489.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.6.17"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-e50810ab99/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-e50810ab99/0/cache/@nestjs-core-npm-7.6.17-57df20dcb0-a5be994489.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
@@ -1294,10 +1294,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.2.18", {
-          "packageLocation": "./.yarn/cache/@types-chai-npm-4.2.18-463de3d90e-db7e2c4e35.zip/node_modules/@types/chai/",
+        ["npm:4.2.21", {
+          "packageLocation": "./.yarn/cache/@types-chai-npm-4.2.21-22c1ed2cef-fc7d32fbae.zip/node_modules/@types/chai/",
           "packageDependencies": [
-            ["@types/chai", "npm:4.2.18"]
+            ["@types/chai", "npm:4.2.21"]
           ],
           "linkType": "HARD",
         }]
@@ -6348,7 +6348,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.0"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.17.3"],
             ["@types/sinon", "npm:10.0.2"],
@@ -8031,7 +8031,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/sinon-chai-virtual-6af47c9ab1/0/cache/sinon-chai-npm-3.7.0-8e6588805e-bea04f685f.zip/node_modules/sinon-chai/",
           "packageDependencies": [
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/sinon", "npm:10.0.2"],
             ["chai", "npm:4.3.4"],
             ["sinon", "npm:11.1.1"]
