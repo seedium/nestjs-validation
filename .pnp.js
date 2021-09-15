@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.1.6"],
-            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"],
+            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.2.1"],
             ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.2.0"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"]
@@ -568,6 +568,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@cspotcode/source-map-consumer", [
+        ["npm:0.8.0", {
+          "packageLocation": "./.yarn/cache/@cspotcode-source-map-consumer-npm-0.8.0-1f37e9e72b-fc32215a35.zip/node_modules/@cspotcode/source-map-consumer/",
+          "packageDependencies": [
+            ["@cspotcode/source-map-consumer", "npm:0.8.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@cspotcode/source-map-support", [
+        ["npm:0.6.1", {
+          "packageLocation": "./.yarn/cache/@cspotcode-source-map-support-npm-0.6.1-2e72b80534-eda5227576.zip/node_modules/@cspotcode/source-map-support/",
+          "packageDependencies": [
+            ["@cspotcode/source-map-support", "npm:0.6.1"],
+            ["@cspotcode/source-map-consumer", "npm:0.8.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@eslint/eslintrc", [
         ["npm:0.4.3", {
           "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-0.4.3-ee1bbcab87-fa916db689.zip/node_modules/@eslint/eslintrc/",
@@ -648,7 +667,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ts-node", null],
             ["nyc", "npm:15.1.0"],
             ["source-map-support", "npm:0.5.19"],
-            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"]
+            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.2.1"]
           ],
           "packagePeers": [
             "@types/nyc",
@@ -1286,10 +1305,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@tsconfig/node16", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.1-0fb4cd7d44-c389a4a81c.zip/node_modules/@tsconfig/node16/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.2-1f43ab567a-57310e8885.zip/node_modules/@tsconfig/node16/",
           "packageDependencies": [
-            ["@tsconfig/node16", "npm:1.0.1"]
+            ["@tsconfig/node16", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -1696,6 +1715,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:7.4.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:8.5.0", {
+          "packageLocation": "./.yarn/cache/acorn-npm-8.5.0-faed0ea119-989ff8bf4b.zip/node_modules/acorn/",
+          "packageDependencies": [
+            ["acorn", "npm:8.5.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["acorn-jsx", [
@@ -1716,6 +1742,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/acorn",
             "acorn"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["acorn-walk", [
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/acorn-walk-npm-8.2.0-2f2cac3177-93ffbdb8b3.zip/node_modules/acorn-walk/",
+          "packageDependencies": [
+            ["acorn-walk", "npm:8.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -6401,7 +6436,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.19"],
             ["supertest", "npm:6.1.6"],
-            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"],
+            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.2.1"],
             ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.2.0"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"]
@@ -8703,33 +8738,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-node", [
-        ["npm:10.0.0", {
-          "packageLocation": "./.yarn/cache/ts-node-npm-10.0.0-9c3d77d0a0-dc461e2b9b.zip/node_modules/ts-node/",
+        ["npm:10.2.1", {
+          "packageLocation": "./.yarn/cache/ts-node-npm-10.2.1-18dc22b42d-528e79c827.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "npm:10.0.0"]
+            ["ts-node", "npm:10.2.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0", {
-          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-6e5b54abf6/0/cache/ts-node-npm-10.0.0-9c3d77d0a0-dc461e2b9b.zip/node_modules/ts-node/",
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.2.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-b5aac061cd/0/cache/ts-node-npm-10.2.1-18dc22b42d-528e79c827.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"],
+            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.2.1"],
+            ["@cspotcode/source-map-support", "npm:0.6.1"],
             ["@swc/core", null],
             ["@swc/wasm", null],
             ["@tsconfig/node10", "npm:1.0.8"],
             ["@tsconfig/node12", "npm:1.0.8"],
             ["@tsconfig/node14", "npm:1.0.1"],
-            ["@tsconfig/node16", "npm:1.0.1"],
+            ["@tsconfig/node16", "npm:1.0.2"],
             ["@types/node", "npm:14.17.3"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/types__node", null],
             ["@types/typescript", null],
+            ["acorn", "npm:8.5.0"],
+            ["acorn-walk", "npm:8.2.0"],
             ["arg", "npm:4.1.3"],
             ["create-require", "npm:1.1.1"],
             ["diff", "npm:4.0.2"],
             ["make-error", "npm:1.3.6"],
-            ["source-map-support", "npm:0.5.19"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"],
             ["yn", "npm:3.1.1"]
           ],
