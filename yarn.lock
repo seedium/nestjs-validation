@@ -3402,12 +3402,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fluent-json-schema@npm:3.0.0":
-  version: 3.0.0
-  resolution: "fluent-json-schema@npm:3.0.0"
+"fluent-json-schema@npm:3.0.1":
+  version: 3.0.1
+  resolution: "fluent-json-schema@npm:3.0.1"
   dependencies:
     deepmerge: ^4.2.2
-  checksum: dc972dbd4e6d761992d413d2f1fff741a77a16324d6148dc745947090a24a7a6c5e3b768c1010c17887b84184319aafa2bcadd851ba482d066169b9f4599a53b
+  checksum: 722c5cbb1b27618be16ac36fb8f15db8affa21b596f104510f4b169c402a77d52b5a4773b4a989df4174a1c8bec1360f3470321ecf44a58694ca6e10ea735159
   languageName: node
   linkType: hard
 
@@ -5445,7 +5445,7 @@ fsevents@~2.3.1:
     conventional-changelog-angular: 5.0.13
     eslint: 7.32.0
     eslint-config-prettier: 8.3.0
-    fluent-json-schema: 3.0.0
+    fluent-json-schema: 3.0.1
     husky: 6.0.0
     light-my-request: 4.4.4
     lint-staged: 11.0.0

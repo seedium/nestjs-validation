@@ -85,7 +85,7 @@
     "rxjs": "^6.0.0 || ^7.0.0"
   },
   "dependencies": {
-    "fluent-json-schema": "3.0.0",
+    "fluent-json-schema": "3.0.1",
     "lodash.pickby": "4.6.0"
   }
 }
