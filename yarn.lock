@@ -1326,7 +1326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.10.0, ajv@npm:^6.12.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
+"ajv@npm:^6.10.0, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -1335,6 +1335,18 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^8.1.0":
+  version: 8.6.3
+  resolution: "ajv@npm:8.6.3"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    json-schema-traverse: ^1.0.0
+    require-from-string: ^2.0.2
+    uri-js: ^4.2.2
+  checksum: d9abd69cbafc06bb38484aac957aa5857f1c4ba65ab86863a78c9aafa04dc67141f57ff1b75569371ba409068a668812fecbf22a5f90b7e083c18f659ae80779
   languageName: node
   linkType: hard
 
@@ -4775,16 +4787,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"light-my-request@npm:4.4.1":
-  version: 4.4.1
-  resolution: "light-my-request@npm:4.4.1"
+"light-my-request@npm:4.4.4":
+  version: 4.4.4
+  resolution: "light-my-request@npm:4.4.4"
   dependencies:
-    ajv: ^6.12.2
+    ajv: ^8.1.0
     cookie: ^0.4.0
     fastify-warning: ^0.2.0
     readable-stream: ^3.6.0
     set-cookie-parser: ^2.4.1
-  checksum: 3c095d268c3f797c8b69e44ef3d24e149aed2116e58b696144eecd975814ca50693603d04c6d50f462f736483fbc9b1e02a4c0a6c658964fea442493e28cd191
+  checksum: 4f5ac0f337dc5523c8067efacdb1ae1202633f9540e63f14c4125b263810aa227a173b4055c068036f5f19ecf99798b517adb009c70aae4a1ea8c0db76199e2c
   languageName: node
   linkType: hard
 
@@ -5435,7 +5447,7 @@ fsevents@~2.3.1:
     eslint-config-prettier: 8.3.0
     fluent-json-schema: 3.0.0
     husky: 6.0.0
-    light-my-request: 4.4.1
+    light-my-request: 4.4.4
     lint-staged: 11.0.0
     lodash.pickby: 4.6.0
     mocha: 8.4.0
