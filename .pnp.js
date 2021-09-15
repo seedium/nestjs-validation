@@ -61,7 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
             ["husky", "npm:6.0.0"],
-            ["light-my-request", "npm:4.4.1"],
+            ["light-my-request", "npm:4.4.4"],
             ["lint-staged", "npm:11.0.0"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.4.0"],
@@ -1791,6 +1791,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ajv-npm-8.6.0-74c534c16b-4eed9ee72e.zip/node_modules/ajv/",
           "packageDependencies": [
             ["ajv", "npm:8.6.0"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["json-schema-traverse", "npm:1.0.0"],
+            ["require-from-string", "npm:2.0.2"],
+            ["uri-js", "npm:4.4.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.6.3", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.6.3-ccbb84803e-d9abd69cba.zip/node_modules/ajv/",
+          "packageDependencies": [
+            ["ajv", "npm:8.6.3"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
@@ -5698,11 +5709,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["light-my-request", [
-        ["npm:4.4.1", {
-          "packageLocation": "./.yarn/cache/light-my-request-npm-4.4.1-775a9a0669-3c095d268c.zip/node_modules/light-my-request/",
+        ["npm:4.4.4", {
+          "packageLocation": "./.yarn/cache/light-my-request-npm-4.4.4-af84023696-4f5ac0f337.zip/node_modules/light-my-request/",
           "packageDependencies": [
-            ["light-my-request", "npm:4.4.1"],
-            ["ajv", "npm:6.12.6"],
+            ["light-my-request", "npm:4.4.4"],
+            ["ajv", "npm:8.6.3"],
             ["cookie", "npm:0.4.1"],
             ["fastify-warning", "npm:0.2.0"],
             ["readable-stream", "npm:3.6.0"],
@@ -6429,7 +6440,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
             ["husky", "npm:6.0.0"],
-            ["light-my-request", "npm:4.4.1"],
+            ["light-my-request", "npm:4.4.4"],
             ["lint-staged", "npm:11.0.0"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:8.4.0"],
