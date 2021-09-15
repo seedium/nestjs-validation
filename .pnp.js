@@ -76,7 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon", "npm:11.1.1"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.19"],
-            ["supertest", "npm:6.1.3"],
+            ["supertest", "npm:6.1.6"],
             ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"],
             ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.2.0"],
@@ -6400,7 +6400,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon", "npm:11.1.1"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.19"],
-            ["supertest", "npm:6.1.3"],
+            ["supertest", "npm:6.1.6"],
             ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.0.0"],
             ["ts-toolbelt", "npm:9.6.0"],
             ["tslib", "npm:2.2.0"],
@@ -8472,10 +8472,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["supertest", [
-        ["npm:6.1.3", {
-          "packageLocation": "./.yarn/cache/supertest-npm-6.1.3-629fe02e4c-4a3e078819.zip/node_modules/supertest/",
+        ["npm:6.1.6", {
+          "packageLocation": "./.yarn/cache/supertest-npm-6.1.6-6f73075270-ef4f0479a1.zip/node_modules/supertest/",
           "packageDependencies": [
-            ["supertest", "npm:6.1.3"],
+            ["supertest", "npm:6.1.6"],
             ["methods", "npm:1.1.2"],
             ["superagent", "npm:6.1.0"]
           ],
