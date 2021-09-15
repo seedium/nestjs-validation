@@ -56,7 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.22.0"],
             ["ajv", "npm:8.6.0"],
             ["chai", "npm:4.3.4"],
-            ["conventional-changelog-angular", "npm:5.0.12"],
+            ["conventional-changelog-angular", "npm:5.0.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
@@ -2824,6 +2824,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/conventional-changelog-angular-npm-5.0.12-0dd88eb3f8-984545414f.zip/node_modules/conventional-changelog-angular/",
           "packageDependencies": [
             ["conventional-changelog-angular", "npm:5.0.12"],
+            ["compare-func", "npm:2.0.0"],
+            ["q", "npm:1.5.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.13", {
+          "packageLocation": "./.yarn/cache/conventional-changelog-angular-npm-5.0.13-50e4a302c4-c35fc766bb.zip/node_modules/conventional-changelog-angular/",
+          "packageDependencies": [
+            ["conventional-changelog-angular", "npm:5.0.13"],
             ["compare-func", "npm:2.0.0"],
             ["q", "npm:1.5.1"]
           ],
@@ -6415,7 +6424,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.22.0"],
             ["ajv", "npm:8.6.0"],
             ["chai", "npm:4.3.4"],
-            ["conventional-changelog-angular", "npm:5.0.12"],
+            ["conventional-changelog-angular", "npm:5.0.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.0"],
