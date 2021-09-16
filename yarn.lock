@@ -5461,7 +5461,7 @@ fsevents@~2.3.1:
     semver: 7.3.5
     sinon: 11.1.1
     sinon-chai: 3.7.0
-    source-map-support: 0.5.19
+    source-map-support: 0.5.20
     supertest: 6.1.6
     ts-node: 10.2.1
     ts-toolbelt: 9.6.0
@@ -7028,13 +7028,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:0.5.19":
-  version: 0.5.19
-  resolution: "source-map-support@npm:0.5.19"
+"source-map-support@npm:0.5.20":
+  version: 0.5.20
+  resolution: "source-map-support@npm:0.5.20"
   dependencies:
     buffer-from: ^1.0.0
     source-map: ^0.6.0
-  checksum: 59d4efaae97755155b078413ecba63517e3ef054cc7ab767bbd30e6f3054be2ae8e8f5cce7eef53b7eb93e98fe27a58dd8f5e7abfb13144ba420ddaf5267bbb2
+  checksum: 2c5821ee94732b2ddbb1e1d9e61ed76ef00f72415fa686ab96d5f5c711789d55424866fa7d6c493beea380e44418053d86ec490b82c101008eac311463da84a9
   languageName: node
   linkType: hard
 
