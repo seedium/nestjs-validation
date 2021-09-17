@@ -5442,7 +5442,7 @@ fsevents@~2.3.1:
     reflect-metadata: 0.1.13
     release-it: 14.9.0
     rimraf: 3.0.2
-    rxjs: 7.1.0
+    rxjs: 7.3.0
     semver: 7.3.5
     sinon: 11.1.2
     sinon-chai: 3.7.0
@@ -6757,12 +6757,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.1.0":
-  version: 7.1.0
-  resolution: "rxjs@npm:7.1.0"
+"rxjs@npm:7.3.0":
+  version: 7.3.0
+  resolution: "rxjs@npm:7.3.0"
   dependencies:
     tslib: ~2.1.0
-  checksum: e4d71512e71278002f8399e0741b6a51b383b74476b687074961bc3a66ed48d657fa7b77a6d6dc07535fe265abd9d510afbcab598f86dba3218e76470f0ec3e7
+  checksum: 148b28cdc6701e5d5011079523d1f2475c82b94b6945654b5045050dd4b2e1290de26f53e8e253a9392b57d08ba7b83d97b141bb25bec124c202cd0c24f9d1e5
   languageName: node
   linkType: hard
 
