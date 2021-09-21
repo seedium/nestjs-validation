@@ -1093,12 +1093,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinon@npm:10.0.2":
-  version: 10.0.2
-  resolution: "@types/sinon@npm:10.0.2"
+"@types/sinon@npm:10.0.3":
+  version: 10.0.3
+  resolution: "@types/sinon@npm:10.0.3"
   dependencies:
     "@sinonjs/fake-timers": ^7.1.0
-  checksum: 44d149b0ba4ebfbadd7452e31edb35aab782d74bb542a808e5b0cc72f40fd2db6b4179bb97a79d5e2dc1b870823a395cd21349037a7af336810c1662ee9f076f
+  checksum: 70e2081ba7e784132e5ccfe7aad9335657687475bdde6cc1997c328240d20de13c62e47f66fce2d4b1140bb5f0c1e708bf4ed7086790c2190ece0fd204671c0a
   languageName: node
   linkType: hard
 
@@ -5444,7 +5444,7 @@ fsevents@~2.3.1:
     "@types/chai": 4.2.18
     "@types/mocha": 8.2.3
     "@types/node": 14.17.3
-    "@types/sinon": 10.0.2
+    "@types/sinon": 10.0.3
     "@types/sinon-chai": 3.2.5
     "@types/supertest": 2.0.11
     "@typescript-eslint/eslint-plugin": 4.31.2
