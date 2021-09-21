@@ -42,7 +42,7 @@
     "@nestjs/swagger": "4.8.2",
     "@nestjs/testing": "7.6.18",
     "@release-it/conventional-changelog": "3.3.0",
-    "@types/chai": "4.2.18",
+    "@types/chai": "4.2.22",
     "@types/mocha": "9.0.0",
     "@types/node": "14.17.17",
     "@types/sinon": "10.0.3",
