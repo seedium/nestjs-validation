@@ -5479,7 +5479,7 @@ fsevents@~2.3.2:
     supertest: 6.1.6
     ts-node: 10.2.1
     ts-toolbelt: 9.6.0
-    tslib: 2.2.0
+    tslib: 2.3.1
     typescript: 4.2.4
   peerDependencies:
     "@nestjs/common": ^6.0.0 || ^7.0.0
@@ -7653,6 +7653,13 @@ fsevents@~2.3.2:
   version: 2.2.0
   resolution: "tslib@npm:2.2.0"
   checksum: 2d35468c470410871c5246e43f12dcb6d0fc363b617c176f26443b9530e5c5ee8448966892a42956168d8f495da7865bda33dfe82c26c91991e28999974a618f
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.3.1":
+  version: 2.3.1
+  resolution: "tslib@npm:2.3.1"
+  checksum: 5ae2f209c5127bad284974c78916f02c72082615f65889a7ed0c7ca6d5f935c30338a0ee7310e1d9652dabc7b7507fd2905035487446d09d45fc1f19de71cf05
   languageName: node
   linkType: hard
 
