@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.0"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0"],
             ["@types/chai", "npm:4.2.18"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.17"],
@@ -1162,17 +1162,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@release-it/conventional-changelog", [
-        ["npm:2.0.1", {
-          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
+        ["npm:3.3.0", {
+          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-3.3.0-7cfeff64bf-948e2620ef.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "npm:2.0.1"]
+            ["@release-it/conventional-changelog", "npm:3.3.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1", {
-          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-06c3283517/0/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0", {
+          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-daa883983b/0/cache/@release-it-conventional-changelog-npm-3.3.0-7cfeff64bf-948e2620ef.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0"],
             ["@types/release-it", null],
             ["concat-stream", "npm:2.0.0"],
             ["conventional-changelog", "npm:3.1.24"],
@@ -6443,7 +6443,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.17"],
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.8.0"],
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.15"],
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:2.0.1"],
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0"],
             ["@types/chai", "npm:4.2.18"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.17"],
