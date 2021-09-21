@@ -580,15 +580,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@nestjs/mapped-types@npm:0.4.0"
+"@nestjs/mapped-types@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@nestjs/mapped-types@npm:0.4.1"
   peerDependencies:
     "@nestjs/common": ^7.0.8
     class-transformer: ^0.2.0 || ^0.3.0 || ^0.4.0
     class-validator: ^0.11.1 || ^0.12.0 || ^0.13.0
     reflect-metadata: ^0.1.12
-  checksum: fbeb2864bb2b7636868525d9f317b5442acddd8e0d5d81880a2d0a117c51b631aa2a4008e5a690c0df321cb4ff7dfecf196defb4e44472281163772371fe0f90
+  checksum: 3c451fd0b161602e4522411d311245ccdfa968710e221d721c871a4caf68a3c11a6baaf3a96f629b84999a852695b0a05cefe0a27846590d261a6d947a34e599
   languageName: node
   linkType: hard
 
@@ -608,11 +608,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:4.8.0":
-  version: 4.8.0
-  resolution: "@nestjs/swagger@npm:4.8.0"
+"@nestjs/swagger@npm:4.8.2":
+  version: 4.8.2
+  resolution: "@nestjs/swagger@npm:4.8.2"
   dependencies:
-    "@nestjs/mapped-types": 0.4.0
+    "@nestjs/mapped-types": 0.4.1
     lodash: 4.17.21
     path-to-regexp: 3.2.0
   peerDependencies:
@@ -626,7 +626,7 @@ __metadata:
       optional: true
     swagger-ui-express:
       optional: true
-  checksum: 7d4a65211b39fd70659ff6d0c8950ee62c9949dd7d504770d7dd80de4e05fa8d5f34d2f5306c84e7cf474945ab3983a9a66966e2df0b78aef166c66e70e1cc04
+  checksum: f2d8cf607ae9646e03c0a7ff1a1201bdd6af813ee42b01893c33bca17d67b25166d1ce8b7bed85b0df779ded81a43bbe1bcf5baa9e406a8f93f1bdbdc1eda7ef
   languageName: node
   linkType: hard
 
@@ -5443,7 +5443,7 @@ fsevents@~2.3.2:
     "@nestjs/common": 7.6.17
     "@nestjs/core": 7.6.17
     "@nestjs/platform-express": 7.6.17
-    "@nestjs/swagger": 4.8.0
+    "@nestjs/swagger": 4.8.2
     "@nestjs/testing": 7.6.15
     "@release-it/conventional-changelog": 3.3.0
     "@types/chai": 4.2.18
