@@ -1011,10 +1011,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:4.2.18":
-  version: 4.2.18
-  resolution: "@types/chai@npm:4.2.18"
-  checksum: db7e2c4e35d1f082ebb1d71e9617eff8f0de293bd39c52a07bb6d6bf93db91aa301e8ef16536497b49962689055736ab7cf6aaf6321c6cb4dd996c5691817811
+"@types/chai@npm:4.2.22":
+  version: 4.2.22
+  resolution: "@types/chai@npm:4.2.22"
+  checksum: 2f03697f6865eabbd358133daf3e0ec5664c629c26ed6d5af897fed88382f7eaac296b02a78e50c664c70e5689f6803da76cbdad221b765d4502bb378cd9ea64
   languageName: node
   linkType: hard
 
@@ -5468,7 +5468,7 @@ fsevents@~2.3.2:
     "@nestjs/swagger": 4.8.2
     "@nestjs/testing": 7.6.18
     "@release-it/conventional-changelog": 3.3.0
-    "@types/chai": 4.2.18
+    "@types/chai": 4.2.22
     "@types/mocha": 9.0.0
     "@types/node": 14.17.17
     "@types/sinon": 10.0.3
