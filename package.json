@@ -58,7 +58,7 @@
     "husky": "7.0.2",
     "light-my-request": "4.4.4",
     "lint-staged": "11.1.2",
-    "mocha": "9.1.1",
+    "mocha": "9.1.2",
     "nyc": "15.1.0",
     "pinst": "2.1.6",
     "prettier": "2.4.1",
