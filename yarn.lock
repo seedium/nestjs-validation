@@ -4896,16 +4896,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"light-my-request@npm:4.5.0":
-  version: 4.5.0
-  resolution: "light-my-request@npm:4.5.0"
+"light-my-request@npm:4.6.0":
+  version: 4.6.0
+  resolution: "light-my-request@npm:4.6.0"
   dependencies:
     ajv: ^8.1.0
     cookie: ^0.4.0
     fastify-warning: ^0.2.0
-    readable-stream: ^3.6.0
     set-cookie-parser: ^2.4.1
-  checksum: fab959d03a1400d9317e2619ad2ec2ae77f21f80769e89976eb9630d280e2d39cfc963010c5d17cda5f0337913e1c5d4c6fff237fcf3514af8e5ecbf488282b4
+  checksum: fdacb2c132bacf5109478341a80fd88273d41990a5e0483fda5d559bf84be6bb211eec28c75a1cb148fac7a20fb97e056582beea597b0e0a763fd92fcebc11e1
   languageName: node
   linkType: hard
 
@@ -5545,7 +5544,7 @@ fsevents@~2.3.2:
     eslint-config-prettier: 8.3.0
     fluent-json-schema: 3.0.1
     husky: 7.0.2
-    light-my-request: 4.5.0
+    light-my-request: 4.6.0
     lint-staged: 11.2.3
     lodash.pickby: 4.6.0
     mocha: 9.1.2
