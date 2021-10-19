@@ -64,7 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["light-my-request", "npm:4.6.0"],
             ["lint-staged", "npm:11.2.3"],
             ["lodash.pickby", "npm:4.6.0"],
-            ["mocha", "npm:9.1.2"],
+            ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
@@ -6388,10 +6388,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["mocha", [
-        ["npm:9.1.2", {
-          "packageLocation": "./.yarn/cache/mocha-npm-9.1.2-90cbe2103a-7134bc30b1.zip/node_modules/mocha/",
+        ["npm:9.1.3", {
+          "packageLocation": "./.yarn/cache/mocha-npm-9.1.3-cf8df742ce-73fc01d240.zip/node_modules/mocha/",
           "packageDependencies": [
-            ["mocha", "npm:9.1.2"],
+            ["mocha", "npm:9.1.3"],
             ["@ungap/promise-all-settled", "npm:1.1.2"],
             ["ansi-colors", "npm:4.1.1"],
             ["browser-stdout", "npm:1.3.1"],
@@ -6553,7 +6553,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["light-my-request", "npm:4.6.0"],
             ["lint-staged", "npm:11.2.3"],
             ["lodash.pickby", "npm:4.6.0"],
-            ["mocha", "npm:9.1.2"],
+            ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
