@@ -5577,7 +5577,7 @@ fsevents@~2.3.2:
     sinon-chai: 3.7.0
     source-map-support: 0.5.20
     supertest: 6.1.6
-    ts-node: 10.3.1
+    ts-node: 10.4.0
     ts-toolbelt: 9.6.0
     tslib: 2.3.1
     typescript: 4.2.4
@@ -7709,9 +7709,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.3.1":
-  version: 10.3.1
-  resolution: "ts-node@npm:10.3.1"
+"ts-node@npm:10.4.0":
+  version: 10.4.0
+  resolution: "ts-node@npm:10.4.0"
   dependencies:
     "@cspotcode/source-map-support": 0.7.0
     "@tsconfig/node10": ^1.0.7
@@ -7741,7 +7741,7 @@ fsevents@~2.3.2:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: 33230b902eb4746ac6a0423718bf2e0546096fd364f6ec82b58c63c149dab4f508fa4cc4c2d64314af7dd61377b9598c84bd031aec1677013e942d46697e8e16
+  checksum: 3c2797b6ca6a3811c04b194f9423f98db0ef218504f5246306ab2b45efe95f494a6e4b3b7f6ffdca97faee53b9a07568cb2a3fb9b7cc0f5d49e7e522646412dc
   languageName: node
   linkType: hard
 
