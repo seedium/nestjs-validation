@@ -950,12 +950,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^7.1.0, @sinonjs/fake-timers@npm:^7.1.2":
+"@sinonjs/fake-timers@npm:^7.1.0":
   version: 7.1.2
   resolution: "@sinonjs/fake-timers@npm:7.1.2"
   dependencies:
     "@sinonjs/commons": ^1.7.0
   checksum: 5ce48e40db14d7e1419bae287b84559133d580cb56130b51d7479dff318bfafed87531f8b48f618f07e3c9a6113c9e3f00286805d55de64986b9cccb8eb6d5cf
+  languageName: node
+  linkType: hard
+
+"@sinonjs/fake-timers@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@sinonjs/fake-timers@npm:8.1.0"
+  dependencies:
+    "@sinonjs/commons": ^1.7.0
+  checksum: 3390628056e527ec37e0ce4d9f197c2391fef0c8aa208dff832cc8f3e30cfebe1440645fe3bc05ad787efe577323023b6025b60443269d9baf67f4346d73e4f2
   languageName: node
   linkType: hard
 
@@ -5565,7 +5574,7 @@ fsevents@~2.3.2:
     rimraf: 3.0.2
     rxjs: 7.4.0
     semver: 7.3.5
-    sinon: 11.1.2
+    sinon: 12.0.0
     sinon-chai: 3.7.0
     source-map-support: 0.5.20
     supertest: 6.1.6
@@ -7101,17 +7110,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sinon@npm:11.1.2":
-  version: 11.1.2
-  resolution: "sinon@npm:11.1.2"
+"sinon@npm:12.0.0":
+  version: 12.0.0
+  resolution: "sinon@npm:12.0.0"
   dependencies:
     "@sinonjs/commons": ^1.8.3
-    "@sinonjs/fake-timers": ^7.1.2
+    "@sinonjs/fake-timers": ^8.1.0
     "@sinonjs/samsam": ^6.0.2
     diff: ^5.0.0
     nise: ^5.1.0
     supports-color: ^7.2.0
-  checksum: dca6f9cbc7cb1af0b1f8e3fb14afad261f280b5cb29372f8e9b7432afc17d6c60e3f8895997bc97237855795fe82cf2c3b82e9d4f3554b5ae026874d52d7c71c
+  checksum: a5bf8e7df67579880b7cc15cc004bbce4a1572a05e5582be06ee37f29e7e37b8f69109b49d3170b4ef2203b97ebf50b051e1e0ad345b7fbc1a3f355027ae9c54
   languageName: node
   linkType: hard
 
