@@ -5570,7 +5570,7 @@ fsevents@~2.3.2:
     pinst: 2.1.6
     prettier: 2.4.1
     reflect-metadata: 0.1.13
-    release-it: 14.11.6
+    release-it: 14.11.7
     rimraf: 3.0.2
     rxjs: 7.4.0
     semver: 7.3.5
@@ -6672,9 +6672,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"release-it@npm:14.11.6":
-  version: 14.11.6
-  resolution: "release-it@npm:14.11.6"
+"release-it@npm:14.11.7":
+  version: 14.11.7
+  resolution: "release-it@npm:14.11.7"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 18.10.0
@@ -6707,7 +6707,7 @@ fsevents@~2.3.2:
     yargs-parser: 20.2.9
   bin:
     release-it: bin/release-it.js
-  checksum: fd62dc2cfe91cde5ac53df67c26627b5aa00fbec13518e677c8f28415f86c1716be6788b3668035f5a05331e0b5b2f96a9aa94587ceb57af2f67d68afeedeb17
+  checksum: fa71a5a8a41e94351767bceb7062f2d90a4a72455089da0508220cfcf669309a513d6a281f15f3c561f7125359f0d8e15663dc47b3078b0c2f56161264474253
   languageName: node
   linkType: hard
 
