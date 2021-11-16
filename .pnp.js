@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["supertest", "npm:6.1.6"],
@@ -6618,7 +6618,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["supertest", "npm:6.1.6"],
@@ -8241,10 +8241,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sinon", [
-        ["npm:12.0.0", {
-          "packageLocation": "./.yarn/cache/sinon-npm-12.0.0-0b2e3ebdc0-a5bf8e7df6.zip/node_modules/sinon/",
+        ["npm:12.0.1", {
+          "packageLocation": "./.yarn/cache/sinon-npm-12.0.1-b9d98d3d3a-40bf04d755.zip/node_modules/sinon/",
           "packageDependencies": [
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["@sinonjs/commons", "npm:1.8.3"],
             ["@sinonjs/fake-timers", "npm:8.1.0"],
             ["@sinonjs/samsam", "npm:6.0.2"],
@@ -8270,7 +8270,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.22"],
             ["@types/sinon", "npm:10.0.6"],
             ["chai", "npm:4.3.4"],
-            ["sinon", "npm:12.0.0"]
+            ["sinon", "npm:12.0.1"]
           ],
           "packagePeers": [
             "@types/chai",
