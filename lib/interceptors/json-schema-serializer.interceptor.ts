@@ -53,7 +53,7 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
           .filter(this.isSerializerValidatorSet())
           .map(({ type, validator }) => validator(req[type])),
       );
-    } catch (err) {
+    } catch (err: any) {
       throw new ValidationException(err.errors);
     }
   }
@@ -71,7 +71,7 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
     }
     try {
       await validator(data);
-    } catch (err) {
+    } catch (err: any) {
       throw new ValidationException(err.errors);
     }
     return data;
