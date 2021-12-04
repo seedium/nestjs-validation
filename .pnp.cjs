@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.33"],
             ["@types/sinon", "npm:10.0.6"],
-            ["@types/sinon-chai", "npm:3.2.5"],
+            ["@types/sinon-chai", "npm:3.2.6"],
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.5.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.5.0"],
@@ -1524,10 +1524,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/sinon-chai", [
-        ["npm:3.2.5", {
-          "packageLocation": "./.yarn/cache/@types-sinon-chai-npm-3.2.5-1d6490532a-ac332b8f2c.zip/node_modules/@types/sinon-chai/",
+        ["npm:3.2.6", {
+          "packageLocation": "./.yarn/cache/@types-sinon-chai-npm-3.2.6-2935a5d4e9-0613ee8eaf.zip/node_modules/@types/sinon-chai/",
           "packageDependencies": [
-            ["@types/sinon-chai", "npm:3.2.5"],
+            ["@types/sinon-chai", "npm:3.2.6"],
             ["@types/chai", "npm:4.2.15"],
             ["@types/sinon", "npm:9.0.11"]
           ],
@@ -6603,7 +6603,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.33"],
             ["@types/sinon", "npm:10.0.6"],
-            ["@types/sinon-chai", "npm:3.2.5"],
+            ["@types/sinon-chai", "npm:3.2.6"],
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.5.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.5.0"],
