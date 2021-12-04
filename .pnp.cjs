@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-angular", "npm:13.2.0"],
-            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.1"],
+            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.2"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
@@ -676,32 +676,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@istanbuljs/nyc-config-typescript", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/@istanbuljs-nyc-config-typescript-npm-1.0.1-d1daa3ba46-b4106446f8.zip/node_modules/@istanbuljs/nyc-config-typescript/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/@istanbuljs-nyc-config-typescript-npm-1.0.2-379c0ff62d-df6f9c9b17.zip/node_modules/@istanbuljs/nyc-config-typescript/",
           "packageDependencies": [
-            ["@istanbuljs/nyc-config-typescript", "npm:1.0.1"]
+            ["@istanbuljs/nyc-config-typescript", "npm:1.0.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.1", {
-          "packageLocation": "./.yarn/__virtual__/@istanbuljs-nyc-config-typescript-virtual-589d3adade/0/cache/@istanbuljs-nyc-config-typescript-npm-1.0.1-d1daa3ba46-b4106446f8.zip/node_modules/@istanbuljs/nyc-config-typescript/",
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.2", {
+          "packageLocation": "./.yarn/__virtual__/@istanbuljs-nyc-config-typescript-virtual-04616330f0/0/cache/@istanbuljs-nyc-config-typescript-npm-1.0.2-379c0ff62d-df6f9c9b17.zip/node_modules/@istanbuljs/nyc-config-typescript/",
           "packageDependencies": [
-            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.1"],
+            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.2"],
             ["@istanbuljs/schema", "npm:0.1.3"],
             ["@types/nyc", null],
-            ["@types/source-map-support", null],
-            ["@types/ts-node", null],
-            ["nyc", "npm:15.1.0"],
-            ["source-map-support", "npm:0.5.20"],
-            ["ts-node", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:10.4.0"]
+            ["nyc", "npm:15.1.0"]
           ],
           "packagePeers": [
             "@types/nyc",
-            "@types/source-map-support",
-            "@types/ts-node",
-            "nyc",
-            "source-map-support",
-            "ts-node"
+            "nyc"
           ],
           "linkType": "HARD",
         }]
@@ -6600,7 +6592,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nestjs-validation", "workspace:."],
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-angular", "npm:13.2.0"],
-            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.1"],
+            ["@istanbuljs/nyc-config-typescript", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:1.0.2"],
             ["@nestjs/common", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
             ["@nestjs/core", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:7.6.18"],
