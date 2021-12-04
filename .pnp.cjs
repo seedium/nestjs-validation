@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0"],
             ["@types/chai", "npm:4.2.22"],
             ["@types/mocha", "npm:9.0.0"],
-            ["@types/node", "npm:14.17.33"],
+            ["@types/node", "npm:14.18.0"],
             ["@types/sinon", "npm:10.0.6"],
             ["@types/sinon-chai", "npm:3.2.6"],
             ["@types/supertest", "npm:2.0.11"],
@@ -1470,10 +1470,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.17.33", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.33-ac058936d4-47ee8d5a39.zip/node_modules/@types/node/",
+        ["npm:14.18.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.18.0-090dae09d8-b120c26fe5.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.33"]
+            ["@types/node", "npm:14.18.0"]
           ],
           "linkType": "HARD",
         }]
@@ -6606,7 +6606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.3.0"],
             ["@types/chai", "npm:4.2.22"],
             ["@types/mocha", "npm:9.0.0"],
-            ["@types/node", "npm:14.17.33"],
+            ["@types/node", "npm:14.18.0"],
             ["@types/sinon", "npm:10.0.6"],
             ["@types/sinon-chai", "npm:3.2.6"],
             ["@types/supertest", "npm:2.0.11"],
@@ -9012,7 +9012,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.8"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:14.17.33"],
+            ["@types/node", "npm:14.18.0"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
