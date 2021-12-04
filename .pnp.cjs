@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.1"],
             ["husky", "npm:7.0.4"],
-            ["light-my-request", "npm:4.6.0"],
+            ["light-my-request", "npm:4.7.0"],
             ["lint-staged", "npm:12.0.2"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:9.1.3"],
@@ -5896,10 +5896,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["light-my-request", [
-        ["npm:4.6.0", {
-          "packageLocation": "./.yarn/cache/light-my-request-npm-4.6.0-eac58e421d-5e367cec28.zip/node_modules/light-my-request/",
+        ["npm:4.7.0", {
+          "packageLocation": "./.yarn/cache/light-my-request-npm-4.7.0-0312ae4f7b-f49c364fe9.zip/node_modules/light-my-request/",
           "packageDependencies": [
-            ["light-my-request", "npm:4.6.0"],
+            ["light-my-request", "npm:4.7.0"],
             ["ajv", "npm:8.6.3"],
             ["cookie", "npm:0.4.1"],
             ["fastify-warning", "npm:0.2.0"],
@@ -6615,7 +6615,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.3.0"],
             ["fluent-json-schema", "npm:3.0.1"],
             ["husky", "npm:7.0.4"],
-            ["light-my-request", "npm:4.6.0"],
+            ["light-my-request", "npm:4.7.0"],
             ["lint-staged", "npm:12.0.2"],
             ["lodash.pickby", "npm:4.6.0"],
             ["mocha", "npm:9.1.3"],
