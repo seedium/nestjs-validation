@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.4.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.4.0"],
-            ["ajv", "npm:8.8.1"],
+            ["ajv", "npm:8.8.2"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.13"],
             ["eslint", "npm:7.32.0"],
@@ -1889,10 +1889,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.8.1", {
-          "packageLocation": "./.yarn/cache/ajv-npm-8.8.1-3d331224e3-1d586cea81.zip/node_modules/ajv/",
+        ["npm:8.8.2", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.8.2-574db7fea7-90849ef03c.zip/node_modules/ajv/",
           "packageDependencies": [
-            ["ajv", "npm:8.8.1"],
+            ["ajv", "npm:8.8.2"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
@@ -6615,7 +6615,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.4.0"],
             ["@typescript-eslint/parser", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.4.0"],
-            ["ajv", "npm:8.8.1"],
+            ["ajv", "npm:8.8.2"],
             ["chai", "npm:4.3.4"],
             ["conventional-changelog-angular", "npm:5.0.13"],
             ["eslint", "npm:7.32.0"],
