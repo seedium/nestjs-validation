@@ -585,15 +585,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:0.4.1":
-  version: 0.4.1
-  resolution: "@nestjs/mapped-types@npm:0.4.1"
+"@nestjs/mapped-types@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@nestjs/mapped-types@npm:1.0.0"
   peerDependencies:
-    "@nestjs/common": ^7.0.8
+    "@nestjs/common": ^7.0.8 || ^8.0.0
     class-transformer: ^0.2.0 || ^0.3.0 || ^0.4.0
     class-validator: ^0.11.1 || ^0.12.0 || ^0.13.0
     reflect-metadata: ^0.1.12
-  checksum: 53b3834a4f554ee297e92f2e23d9a853e92c46bdb6a7bdc99b503cef4805952875fec2492fde18164c3ca35279988100a9b9cae9b57d31be828e973f73772322
+  checksum: 64e4bb9313a0d71c9535a36679e3c0d3590a8cfd3cd0897175213131afa9bb4b47f547607955f0e3578f26c509e755d7adc898bfcf47bb90117688b5d9b333fb
   languageName: node
   linkType: hard
 
@@ -613,16 +613,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:4.8.2":
-  version: 4.8.2
-  resolution: "@nestjs/swagger@npm:4.8.2"
+"@nestjs/swagger@npm:5.1.5":
+  version: 5.1.5
+  resolution: "@nestjs/swagger@npm:5.1.5"
   dependencies:
-    "@nestjs/mapped-types": 0.4.1
+    "@nestjs/mapped-types": 1.0.0
     lodash: 4.17.21
     path-to-regexp: 3.2.0
   peerDependencies:
-    "@nestjs/common": ^6.8.0 || ^7.0.0
-    "@nestjs/core": ^6.8.0 || ^7.0.0
+    "@nestjs/common": ^8.0.0
+    "@nestjs/core": ^8.0.0
     fastify-swagger: "*"
     reflect-metadata: ^0.1.12
     swagger-ui-express: "*"
@@ -631,7 +631,7 @@ __metadata:
       optional: true
     swagger-ui-express:
       optional: true
-  checksum: 305f86c3739e19e1625c628c2cee3620f9a2fe8de5a05f04af1644c483588bfef2727e0d699ad18eb624e132abb0a11e5aa0f20d0e9f6debd02d7724deeabd01
+  checksum: 76a92bd411904464ff34fc5b95357e56e4b3464af628a283562b2b21f134d6586386edc31623759b15a687740778659bdea11efde24c6b687ba17e81368db3e6
   languageName: node
   linkType: hard
 
@@ -5568,7 +5568,7 @@ fsevents@~2.3.2:
     "@nestjs/common": 7.6.18
     "@nestjs/core": 7.6.18
     "@nestjs/platform-express": 7.6.18
-    "@nestjs/swagger": 4.8.2
+    "@nestjs/swagger": 5.1.5
     "@nestjs/testing": 7.6.18
     "@release-it/conventional-changelog": 3.3.0
     "@types/chai": 4.2.22
@@ -5609,7 +5609,7 @@ fsevents@~2.3.2:
   peerDependencies:
     "@nestjs/common": ^6.0.0 || ^7.0.0
     "@nestjs/core": ^6.0.0 || ^7.0.0
-    "@nestjs/swagger": ^4.7.15
+    "@nestjs/swagger": ^4.7.15 || ^5.0.0
     ajv: ^8.6.0
     reflect-metadata: ^0.1.12
     rxjs: ^6.0.0 || ^7.0.0
