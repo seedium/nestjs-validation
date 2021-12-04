@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { MODULE_PATH } from '@nestjs/common/constants';
-import { ModulesContainer } from '@nestjs/core';
+import { ModulesContainer, ApplicationConfig } from '@nestjs/core';
 import { Module } from '@nestjs/core/injector/module';
 import { OpenAPIObject } from '@nestjs/swagger/dist/interfaces';
 import { SwaggerScanner } from '@nestjs/swagger/dist/swagger-scanner';
@@ -20,7 +20,10 @@ import { flatten } from '../utils';
 export class SwaggerExplorerServices {
   private _scanner = new SwaggerScanner();
 
-  constructor(private readonly _modulesContainer: ModulesContainer) {}
+  constructor(
+    private readonly _modulesContainer: ModulesContainer,
+    private readonly _applicationConfig: ApplicationConfig,
+  ) {}
 
   public explore(): PathsSchemas {
     const { paths } = this.scanApplication();
@@ -55,7 +58,12 @@ export class SwaggerExplorerServices {
       const allRoutes = new Map(routes);
       const path = Reflect.getMetadata(MODULE_PATH, metatype);
 
-      return this._scanner.scanModuleRoutes(allRoutes, path);
+      return this._scanner.scanModuleRoutes(
+        allRoutes,
+        path,
+        this._applicationConfig.getGlobalPrefix(),
+        this._applicationConfig,
+      );
     });
 
     return (this._scanner as any).transfomer.normalizePaths(
@@ -105,9 +113,8 @@ export class SwaggerExplorerServices {
     }
     return Object.entries(responses).reduce(
       (responsesJsonSchemas, [statusCode, responseObject]) => {
-        const isNotReferenceObject = this.filterNotReferenceObject()(
-          responseObject,
-        );
+        const isNotReferenceObject =
+          this.filterNotReferenceObject()(responseObject);
         if (!isNotReferenceObject) {
           return responsesJsonSchemas;
         }
