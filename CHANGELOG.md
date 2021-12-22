@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/seedium/nestjs-validation/compare/2.0.3...3.0.0) (2021-12-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fluent-json-schema to v3.0.1 ([648c50d](https://github.com/seedium/nestjs-validation/commit/648c50d85d5f8343b15230b0ffcb83aa4a37b70a))
+
 ## [2.0.3](https://github.com/seedium/nestjs-validation/compare/2.0.2...2.0.3) (2021-06-15)
 
 
