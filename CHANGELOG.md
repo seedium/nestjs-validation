@@ -1,4 +1,11 @@
-# [3.0.0](https://github.com/seedium/nestjs-validation/compare/2.0.3...3.0.0) (2021-12-22)
+
+
+## [3.0.1](https://github.com/seedium/nestjs-validation/compare/3.0.0...3.0.1) (2022-04-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade all dependencies ([a40a9a0](https://github.com/seedium/nestjs-validation/commit/a40a9a06eb74b3e77886156eb753d058ed3dd7db))# [3.0.0](https://github.com/seedium/nestjs-validation/compare/2.0.3...3.0.0) (2021-12-22)
 
 
 ### Bug Fixes
@@ -57,4 +64,3 @@
 ### Features
 
 * add validation interceptor ([d15256d](https://github.com/seedium/nestjs-validation/commit/d15256d02a71469fe238cceb5bf3b993853afdeb))
-
