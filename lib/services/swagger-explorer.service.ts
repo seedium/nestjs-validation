@@ -66,7 +66,7 @@ export class SwaggerExplorerServices {
       );
     });
 
-    return (this._scanner as any).transfomer.normalizePaths(
+    return (this._scanner as any).transformer.normalizePaths(
       flatten(denormalizedPaths),
     );
   }
