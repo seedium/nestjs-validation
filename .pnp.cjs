@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.4.4"],\
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.2.1"],\
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.4.4"],\
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.2.2"],\
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.3.0"],\
             ["@types/chai", "npm:4.3.0"],\
             ["@types/mocha", "npm:9.1.0"],\
             ["@types/node", "npm:16.11.26"],\
@@ -1197,22 +1197,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@release-it/conventional-changelog", [\
-        ["npm:4.2.2", {\
-          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-4.2.2-3facfb5f28-4b4c809577.zip/node_modules/@release-it/conventional-changelog/",\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-4.3.0-01e8164e44-57823757b4.zip/node_modules/@release-it/conventional-changelog/",\
           "packageDependencies": [\
-            ["@release-it/conventional-changelog", "npm:4.2.2"]\
+            ["@release-it/conventional-changelog", "npm:4.3.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.2.2", {\
-          "packageLocation": "./.yarn/__virtual__/@release-it-conventional-changelog-virtual-b1d37e9a85/0/cache/@release-it-conventional-changelog-npm-4.2.2-3facfb5f28-4b4c809577.zip/node_modules/@release-it/conventional-changelog/",\
+        ["virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/@release-it-conventional-changelog-virtual-f4b4628374/0/cache/@release-it-conventional-changelog-npm-4.3.0-01e8164e44-57823757b4.zip/node_modules/@release-it/conventional-changelog/",\
           "packageDependencies": [\
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.2.2"],\
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.3.0"],\
             ["@types/release-it", null],\
             ["concat-stream", "npm:2.0.0"],\
             ["conventional-changelog", "npm:3.1.25"],\
             ["conventional-recommended-bump", "npm:6.1.0"],\
-            ["prepend-file", "npm:2.0.0"],\
             ["release-it", "npm:14.14.2"]\
           ],\
           "packagePeers": [\
@@ -6867,7 +6866,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.4.4"],\
             ["@nestjs/swagger", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:5.2.1"],\
             ["@nestjs/testing", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:8.4.4"],\
-            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.2.2"],\
+            ["@release-it/conventional-changelog", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:4.3.0"],\
             ["@types/chai", "npm:4.3.0"],\
             ["@types/mocha", "npm:9.1.0"],\
             ["@types/node", "npm:16.11.26"],\
@@ -7690,17 +7689,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prelude-ls-npm-1.2.1-3e4d272a55-cd192ec0d0.zip/node_modules/prelude-ls/",\
           "packageDependencies": [\
             ["prelude-ls", "npm:1.2.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["prepend-file", [\
-        ["npm:2.0.0", {\
-          "packageLocation": "./.yarn/cache/prepend-file-npm-2.0.0-396312303b-411ee756cc.zip/node_modules/prepend-file/",\
-          "packageDependencies": [\
-            ["prepend-file", "npm:2.0.0"],\
-            ["path-exists", "npm:4.0.0"],\
-            ["temp-write", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9138,29 +9126,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minizlib", "npm:2.1.2"],\
             ["mkdirp", "npm:1.0.4"],\
             ["yallist", "npm:4.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["temp-dir", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/temp-dir-npm-1.0.0-5828254ce3-cb2b58ddfb.zip/node_modules/temp-dir/",\
-          "packageDependencies": [\
-            ["temp-dir", "npm:1.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["temp-write", [\
-        ["npm:4.0.0", {\
-          "packageLocation": "./.yarn/cache/temp-write-npm-4.0.0-19edc9e6b7-4f94187662.zip/node_modules/temp-write/",\
-          "packageDependencies": [\
-            ["temp-write", "npm:4.0.0"],\
-            ["graceful-fs", "npm:4.2.6"],\
-            ["is-stream", "npm:2.0.0"],\
-            ["make-dir", "npm:3.1.0"],\
-            ["temp-dir", "npm:1.0.0"],\
-            ["uuid", "npm:3.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
