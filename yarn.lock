@@ -5388,13 +5388,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^7.4.0":
-  version: 7.8.1
-  resolution: "lru-cache@npm:7.8.1"
-  checksum: 31ea67388c9774300331d70f4affd5a433869bcf0fae5405f967d19d7b447930b713b0566a2e95362c9082034a8b496f3671ccf8f0c061d8e8048412663f9432
-  languageName: node
-  linkType: hard
-
 "macos-release@npm:^2.5.0":
   version: 2.5.0
   resolution: "macos-release@npm:2.5.0"
@@ -5825,7 +5818,7 @@ fsevents@~2.3.2:
     release-it: 14.14.2
     rimraf: 3.0.2
     rxjs: 7.5.5
-    semver: 7.3.6
+    semver: 7.5.4
     sinon: 13.0.1
     sinon-chai: 3.7.0
     source-map-support: 0.5.21
@@ -7263,14 +7256,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"semver@npm:7.3.6":
-  version: 7.3.6
-  resolution: "semver@npm:7.3.6"
+"semver@npm:7.5.4":
+  version: 7.5.4
+  resolution: "semver@npm:7.5.4"
   dependencies:
-    lru-cache: ^7.4.0
+    lru-cache: ^6.0.0
   bin:
     semver: bin/semver.js
-  checksum: 9845f96b22268190b30025e02feca391451f2bd49b2c51920c27cc56744f64cbe397df089018fdb347d4b4fd800eabbd85661870eb63eb28055d2b72e457f759
+  checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
   languageName: node
   linkType: hard
 

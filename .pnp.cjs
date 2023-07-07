@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.14.2"],\
             ["rimraf", "npm:3.0.2"],\
             ["rxjs", "npm:7.5.5"],\
-            ["semver", "npm:7.3.6"],\
+            ["semver", "npm:7.5.4"],\
             ["sinon", "npm:13.0.1"],\
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -6418,13 +6418,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yallist", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:7.8.1", {\
-          "packageLocation": "./.yarn/cache/lru-cache-npm-7.8.1-c3cb0369b1-31ea67388c.zip/node_modules/lru-cache/",\
-          "packageDependencies": [\
-            ["lru-cache", "npm:7.8.1"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["macos-release", [\
@@ -6894,7 +6887,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.14.2"],\
             ["rimraf", "npm:3.0.2"],\
             ["rxjs", "npm:7.5.5"],\
-            ["semver", "npm:7.3.6"],\
+            ["semver", "npm:7.5.4"],\
             ["sinon", "npm:13.0.1"],\
             ["sinon-chai", "virtual:cadc1aac16df7f641093a73e8b5ba14c4c9b180ead0621d07a2354a008c0ddc40af29d6c1055e3510a6123de8bdd8f63f9aad14a20a34d5deec21108f8a44587#npm:3.7.0"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -8433,11 +8426,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.3.6", {\
-          "packageLocation": "./.yarn/cache/semver-npm-7.3.6-9e6a4b1c17-9845f96b22.zip/node_modules/semver/",\
+        ["npm:7.5.4", {\
+          "packageLocation": "./.yarn/cache/semver-npm-7.5.4-c4ad957fcd-12d8ad952f.zip/node_modules/semver/",\
           "packageDependencies": [\
-            ["semver", "npm:7.3.6"],\
-            ["lru-cache", "npm:7.8.1"]\
+            ["semver", "npm:7.5.4"],\
+            ["lru-cache", "npm:6.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
