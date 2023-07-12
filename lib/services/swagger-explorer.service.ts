@@ -1,6 +1,9 @@
-import { Injectable } from '@nestjs/common';
-import { MODULE_PATH } from '@nestjs/common/constants';
-import { ModulesContainer, ApplicationConfig } from '@nestjs/core';
+import { Injectable, Type } from '@nestjs/common';
+import {
+  ModulesContainer,
+  ApplicationConfig,
+  HttpAdapterHost,
+} from '@nestjs/core';
 import { Module } from '@nestjs/core/injector/module';
 import { OpenAPIObject } from '@nestjs/swagger/dist/interfaces';
 import { SwaggerScanner } from '@nestjs/swagger/dist/swagger-scanner';
@@ -15,12 +18,18 @@ import {
 import S, { JSONSchema } from 'fluent-json-schema';
 import { PathsSchemas, DefaultObjectSchema } from '../interfaces';
 import { flatten } from '../utils';
+import { stripLastSlash } from '@nestjs/swagger/dist/utils/strip-last-slash.util';
+import { ModuleRoute } from '@nestjs/swagger/dist/interfaces/module-route.interface';
+import { MODULE_PATH } from '@nestjs/common/constants';
+import { SwaggerTransformer } from '@nestjs/swagger/dist/swagger-transformer';
 
 @Injectable()
 export class SwaggerExplorerServices {
+  private readonly transformer = new SwaggerTransformer();
   private _scanner = new SwaggerScanner();
 
   constructor(
+    private readonly _httpHost: HttpAdapterHost,
     private readonly _modulesContainer: ModulesContainer,
     private readonly _applicationConfig: ApplicationConfig,
   ) {}
@@ -54,21 +63,29 @@ export class SwaggerExplorerServices {
       [],
     );
 
-    const denormalizedPaths = modules.map(({ routes, metatype }) => {
-      const allRoutes = new Map(routes);
-      const path = Reflect.getMetadata(MODULE_PATH, metatype);
+    const globalPrefix = stripLastSlash(
+      this._applicationConfig.getGlobalPrefix(),
+    );
 
-      return this._scanner.scanModuleRoutes(
-        allRoutes,
-        path,
-        this._applicationConfig.getGlobalPrefix(),
-        this._applicationConfig,
+    const denormalizedPaths = modules.map(({ controllers, metatype }) => {
+      let result: ModuleRoute[] = [];
+
+      const modulePath = this.getModulePathMetadata(
+        this._modulesContainer,
+        metatype,
       );
+      result = result.concat(
+        this._scanner.scanModuleControllers(
+          controllers,
+          modulePath,
+          globalPrefix,
+          this._applicationConfig,
+        ),
+      );
+      return this.unescapeColonsInPath(result);
     });
 
-    return (this._scanner as any).transformer.normalizePaths(
-      flatten(denormalizedPaths),
-    );
+    return this.transformer.normalizePaths(flatten(denormalizedPaths));
   }
   private mergeParameters(
     type: ParameterLocation,
@@ -137,7 +154,8 @@ export class SwaggerExplorerServices {
   ) => _args is T {
     return (
       parameterObjectOrRef: T | ReferenceObject,
-    ): parameterObjectOrRef is T => !('$ref' in parameterObjectOrRef);
+    ): parameterObjectOrRef is T =>
+      !('$ref' in (parameterObjectOrRef as object));
   }
   private createEmptyObjectSchema(): DefaultObjectSchema {
     return {
@@ -160,5 +178,31 @@ export class SwaggerExplorerServices {
     } else {
       return null;
     }
+  }
+  private getModulePathMetadata(
+    modulesContainer: ModulesContainer,
+    metatype: Type<unknown>,
+  ): string | undefined {
+    const modulePath = Reflect.getMetadata(
+      MODULE_PATH + modulesContainer.applicationId,
+      metatype,
+    );
+    return modulePath ?? Reflect.getMetadata(MODULE_PATH, metatype);
+  }
+  private unescapeColonsInPath(moduleRoutes: ModuleRoute[]): ModuleRoute[] {
+    const usingFastify =
+      this._httpHost.httpAdapter &&
+      this._httpHost.httpAdapter.getType() === 'fastify';
+    const unescapeColon = usingFastify
+      ? (path: string) => path.replace(/:\{([^}]+)\}/g, ':$1')
+      : (path: string) => path.replace(/\[:\]/g, ':');
+
+    return moduleRoutes.map((moduleRoute) => ({
+      ...moduleRoute,
+      root: {
+        ...moduleRoute.root,
+        path: unescapeColon(moduleRoute.root.path),
+      },
+    }));
   }
 }
