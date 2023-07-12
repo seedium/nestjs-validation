@@ -1,5 +1,17 @@
 
 
+# [4.0.0](https://github.com/seedium/nestjs-validation/compare/3.0.1...4.0.0) (2023-07-12)
+
+
+### Features
+
+* upgrade nestjs to v10 and nestjs swagger to v7 ([a3b72f1](https://github.com/seedium/nestjs-validation/commit/a3b72f1625ff7858d1215f9ee85bb827a32d671e))
+
+
+### BREAKING CHANGES
+
+* drop support for nestjs v9
+
 ## [3.0.1](https://github.com/seedium/nestjs-validation/compare/3.0.0...3.0.1) (2022-04-12)
 
 
