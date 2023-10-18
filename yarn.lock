@@ -1173,10 +1173,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.38":
-  version: 16.18.38
-  resolution: "@types/node@npm:16.18.38"
-  checksum: a3baa141e49ce94486f083eea1240cf38479a73ba663e1bf3f52f85b466125821b6e3ea85ded38fde3901530aca4601291395a50eefcea533a4f3b45171bda28
+"@types/node@npm:18.18.6":
+  version: 18.18.6
+  resolution: "@types/node@npm:18.18.6"
+  checksum: a847639b8455fd3dfa6dbc2917274c82c9db789f1d41aaf69f94ac6c9e54c3c1dd29be6e1e1ccd7c17e54db3d78d7011bc4e70544c6447ceca253dccc0a187e1
   languageName: node
   linkType: hard
 
@@ -6413,7 +6413,7 @@ fsevents@~2.3.2:
     "@release-it/conventional-changelog": 7.0.0
     "@types/chai": 4.3.5
     "@types/mocha": 10.0.1
-    "@types/node": 16.18.38
+    "@types/node": 18.18.6
     "@types/sinon": 10.0.15
     "@types/sinon-chai": 3.2.9
     "@types/supertest": 2.0.12
