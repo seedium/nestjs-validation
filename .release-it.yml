@@ -1,5 +1,6 @@
 git:
   commitMessage: "chore(): release v${version}"
+  requireUpstream: false
 github:
   release: true
 plugins:
