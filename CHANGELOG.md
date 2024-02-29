@@ -1,6 +1,11 @@
 
 
-## [3.0.1](https://github.com/seedium/nestjs-validation/compare/3.0.0...3.0.1) (2022-04-12)
+## [3.0.2](https://github.com/seedium/nestjs-validation/compare/3.0.1...3.0.2) (2024-02-29)
+
+
+### Bug Fixes
+
+* use defer for on response hook and pass original data to exception ([82613bf](https://github.com/seedium/nestjs-validation/commit/82613bf59190d55eb36098a2a1e9b23b3486fa97))## [3.0.1](https://github.com/seedium/nestjs-validation/compare/3.0.0...3.0.1) (2022-04-12)
 
 
 ### Bug Fixes
