@@ -1,6 +1,11 @@
 
 
-## [3.0.2](https://github.com/seedium/nestjs-validation/compare/3.0.1...3.0.2) (2024-02-29)
+## [3.0.3](https://github.com/seedium/nestjs-validation/compare/3.0.2...3.0.3) (2024-02-29)
+
+
+### Bug Fixes
+
+* expose original data publicly in validation exception ([71925ee](https://github.com/seedium/nestjs-validation/commit/71925ee298b650c9c59a3e26aa9a532a5564e37a))## [3.0.2](https://github.com/seedium/nestjs-validation/compare/3.0.1...3.0.2) (2024-02-29)
 
 
 ### Bug Fixes
