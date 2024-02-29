@@ -4,8 +4,7 @@ import {
   ExecutionContext,
   CallHandler,
 } from '@nestjs/common';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { mergeMap, Observable, defer } from 'rxjs';
 import { ValidationContextService } from '../services';
 import { ValidationException } from '../exceptions';
 import { SerializerTypeValidator } from '../interfaces';
@@ -19,7 +18,9 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
     next: CallHandler,
   ): Promise<Observable<any>> {
     await this.onRequest(context);
-    return next.handle().pipe(map((data) => this.onResponse(data, context)));
+    return next
+      .handle()
+      .pipe(mergeMap((data) => defer(() => this.onResponse(data, context))));
   }
   private async onRequest(context: ExecutionContext): Promise<void> {
     const req = context.switchToHttp().getRequest();
@@ -72,7 +73,7 @@ export class JsonSchemaSerializerInterceptor implements NestInterceptor {
     try {
       await validator(data);
     } catch (err: any) {
-      throw new ValidationException(err.errors);
+      throw new ValidationException(err.errors, data);
     }
     return data;
   }
