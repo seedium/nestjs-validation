@@ -1,5 +1,13 @@
 
 
+## [4.0.1](https://github.com/seedium/nestjs-validation/compare/4.0.0...4.0.1) (2024-03-01)
+
+
+### Bug Fixes
+
+* expose original data publicly in validation exception ([a58aa78](https://github.com/seedium/nestjs-validation/commit/a58aa784ddbb480ca50610ab5dbb67bbc19d4f49))
+* use defer for on response hook and pass original data to exception ([57d0c4d](https://github.com/seedium/nestjs-validation/commit/57d0c4d6074ceebcbabdcaee2708bafd2b7d4ea3))
+
 # [4.0.0](https://github.com/seedium/nestjs-validation/compare/3.0.1...4.0.0) (2023-07-12)
 
 
