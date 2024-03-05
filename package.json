@@ -77,8 +77,8 @@
     "typescript": "5.1.6"
   },
   "peerDependencies": {
-    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0",
-    "@nestjs/core": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@nestjs/common": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^10.0.0",
+    "@nestjs/core": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^10.0.0",
     "@nestjs/swagger": "^4.7.15 || ^5.0.0",
     "ajv": "^8.6.0",
     "reflect-metadata": "^0.1.12",
