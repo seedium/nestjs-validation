@@ -41,7 +41,7 @@
     "@nestjs/platform-express": "10.0.5",
     "@nestjs/swagger": "7.1.1",
     "@nestjs/testing": "10.0.5",
-    "@release-it/conventional-changelog": "7.0.0",
+    "@release-it/conventional-changelog": "7.0.2",
     "@types/chai": "4.3.5",
     "@types/mocha": "10.0.1",
     "@types/node": "16.18.38",
